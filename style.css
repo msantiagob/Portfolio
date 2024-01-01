@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 55px;
+    text-align: center;
+    line-height: 1.06;
+    margin: 20px 0 50px 0;
+}
+h2{
+ font-size: 16px;
+
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+  .custom-btn {
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 80px;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+  }
+
+/* 5 */
+.btn-5 {
+    width: 250px;
+    height: 60px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: #e8092d;
+  }
+  .btn-5:hover {
+    color: #e8092d;
+    background: transparent;
+     box-shadow:none;
+  }
+  .btn-5:before,
+  .btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #e8092d;
+    transition:400ms ease all;
+  }
+  .btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .btn-5:hover:before,
+  .btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+#header {
+  background-image: url('assets/background_animated.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+}
+#containerNav {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+#containerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo {
+  width: 80px;
+}
+#txtLogo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+.nav {
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 0 20px;
+  border-radius: 40px;
+}
+
+.nav-item {
+  color: #ffffff;
+  padding: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  margin: 0 6px;
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #dfe2ea;
+    border-radius: 8px 8px 0 0;
+    opacity: 0;
+    transition: 0.3s;
+  }
+}
+
+.nav-item:not(.is-active):hover:before {
+  opacity: 1;
+  bottom: 0;
+}
+
+.nav-item:not(.is-active):hover {
+  color: #959595;
+}
+
+.nav-indicator {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  transition: 0.4s;
+  height: 5px;
+  z-index: 1;
+  border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 580px) {
+  .nav {
+    overflow: auto;
+  }
+}
+
+#btnContact {
+  background-color: #e8092d;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btnContact:hover {
+  background-color: #f30d33;
+}
+
+#btnContact:active {
+  background-color: #f30d33;
+}
+.nav-item-contact {
+  color: #ffffff;
+  padding: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  margin: 0 6px;
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #dfe2ea;
+    border-radius: 8px 8px 0 0;
+    opacity: 0;
+    transition: 0.3s;
+  }
+}
+
+#hero {
+  display: flex;
+  height: 80vh;
+}
+#astronauts {
+  width:90%;
+}
+#txtContainerHero {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#imageContainerHero {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.617);
+}
