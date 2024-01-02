@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
     />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <title>SONMYD</title>
@@ -40,8 +41,8 @@
       </div>
       <div id="hero">
         <div id="txtContainerHero">
-          <div class="fade" >
-            <h2>EL NEGOCIO DEL MAÑANA</h2>
+          <div class="fade">
+            <h4>EL NEGOCIO DEL MAÑANA</h4>
             <h1>Tu Socio en la Transformación Digital</h1>
             <button class="custom-btn btn-5">¡Comencemos el Viaje!</button>
           </div>
@@ -49,12 +50,125 @@
         <div id="imageContainerHero">
           <img
             id="astronauts"
-            src="assets/astronaut.gif"
+            src="assets/astronauts.gif"
             alt="Descubre la maravilla del espacio en este GIF animado, donde dos intrépidos astronautas flotan con gracia mientras orbitan alrededor de un planeta vivo y vibrante. Este cautivador contenido visual te sumergirá en una experiencia cósmica única. ¡Explora la exploración espacial, la ingravidez y la belleza de los astros en este impresionante GIF animado de astronautas y planetas en órbita!"
             title="Astronauts"
           />
         </div>
       </div>
+      <section class="sections">
+        <img src="assets/santiago_bedoya.svg" alt="" width="200px" />
+        <h2>Hola, soy Santiago. Un gusto conocerte.</h2>
+        <p>
+          Desde que comencé mi viaje como programador full stack, he trabajado
+          de forma remota para diversas empresas, colaborado con personas
+          talentosas en la creación de productos digitales. Disfruto enseñando y
+          compartiendo mi pasión por el desarrollo. Soy alguien seguro en mis
+          habilidades, naturalmente curioso y estoy constantemente enfocado en
+          mejorar mis capacidades, abordando cada problema de desarrollo uno a
+          la vez. <br />
+          <br />
+          <span id="question">
+            ¿Interesado en aprender juntos o en crear un proyecto?
+          </span>
+        </p>
+        <button class="custom-btn btn-5">Contáctame</button>
+        <img src="assets/astronaut.gif" alt="" width="100" />
+        <img id="rocket" src="assets/rocket.gif" alt="" width="200px" />
+      </section>
+      <section class="sections">
+        <h2>Habilidades</h2>
+        <div id="containerSkills">
+          <div>
+            <h3>Frontend Developer</h3>
+            <hr id="dividerOne" />
+            <div id="containerImagesSkills">
+              <img class="imgSkills" src="assets/html.svg" alt="" />
+              <img class="imgSkills" src="assets/css.svg" alt="" />
+              <img class="imgSkills" src="assets/javascript.svg" alt="" />
+              <img class="imgSkills" src="assets/react.svg" alt="" />
+              <img class="imgSkills" src="assets/native.svg" alt="" />
+              <img class="imgSkills" src="assets/redux.svg" alt="" />
+              <img class="imgSkills" src="assets/tailwind.svg" alt="" />
+              <img class="imgSkills" src="assets/wordpress.svg" alt="" />
+            </div>
+          </div>
+          <div>
+            <h3>Backend Developer</h3>
+            <hr id="dividerTwo" />
+            <div class="containerImagesSkills">
+              <img class="imgSkills" src="assets/node.svg" alt="" />
+              <img class="imgSkills" src="assets/rails.svg" alt="" />
+              <img class="imgSkills" src="assets/mongo.svg" alt="" />
+              <img class="imgSkills" src="assets/postgresql.svg" alt="" />
+            </div>
+          </div>
+          <div>
+            <h3>Mentor</h3>
+            <hr id="dividerThree" />
+            <div class="containerImagesSkills">
+              <img class="imgSkills" src="assets/github.svg" alt="" />
+              <img class="imgSkills" src="assets/git.svg" alt="" />
+              <img class="imgSkills" src="assets/figma.svg" alt="" />
+              <img class="imgSkills" src="assets/scrum.svg" alt="" />
+              <img class="imgSkills" src="assets/canva.svg" alt="" />
+              <img class="imgSkills" src="assets/chatgpt.svg" alt="" />
+            </div>
+          </div>
+          </div>
+        </div>
+        <img id="comet" src="assets/comet.gif" alt="">
+      </section>
+      <section class="sections">
+        <h2>Portafolio</h2>
+        <div class="slideshow-container">
+          <div class="sliderContainer">
+            <div class="mySlides fade ">
+              <div class="numbertext">1 / 4</div>
+              <img class="modalImg" src="assets/puntacana.svg".jpg">
+              <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade ">
+              <div class="numbertext">2 / 4</div>
+              <img class="modalImg" src="assets/insurance.svg" >
+              <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade ">
+              <div class="numbertext">3 / 4</div>
+              <img class="modalImg" src="assets/movies.svg">
+              <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade ">
+              <div class="numbertext">4 / 4</div>
+              <img class="modalImg" src="assets/odontology.svg">
+              <div class="text">Caption Three</div>
+
+            </div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" />
+            <div id="caption"></div>
+          </div>
+      </section>
+      <section class="sections">
+        <h2>Contactame</h2>
+      </section>
     </header>
     <script src="main.js"></script>
   </body>
