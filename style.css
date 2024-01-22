@@ -265,6 +265,7 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 60px 0;
 }
 #rocket {
   position: absolute;
@@ -661,3 +662,25 @@ z-index: -5;
       transform: translateY(-2000px);
   }
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #cfcfcf #000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 11px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #cfcfcf;
+    border-radius: 10px;
+    border: 2px solid #000000;
+  }
