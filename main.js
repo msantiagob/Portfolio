@@ -149,24 +149,45 @@ window.onscroll = function () {
     const sectionHero = document.getElementById('aboutMe');
     let secHero = sectionHero.getBoundingClientRect();
 
-    rocket.style.top = 700+secHero.bottom*1+ 'px';
-
+    rocket.style.top = 700 + secHero.bottom * 1 + 'px';
   }
   if (whatsFocusSection() === 'skills') {
-    const astronauts = document.getElementById('astronauts');
-    const txtContainerHero = document.getElementById('txtContainerHero');
-    astronauts.style.marginBottom = y * 1.5 + 'px';
-    txtContainerHero.style.marginBottom = y * 0.8 + 'px';
     const section = document.getElementById('aboutMe');
     let sec = section.getBoundingClientRect();
 
-    rocket.style.top = 700+sec.bottom*1+ 'px';
+    rocket.style.top = 700 + sec.bottom * 1 + 'px';
+
+    const comet1 = document.getElementById('comet1');
+    const comet2 = document.getElementById('comet2');
+    const comet3 = document.getElementById('comet3');
+    if (isElementVisible(comet1)) {
+      comet1.style = 'transform: scaleX(1);';
+      comet1.style.left = '120%';
+    } else {
+      comet1.style = 'transform: scaleX(-1);';
+      comet1.style.left = '-120%';
+    }
+    if (isElementVisible(comet2)) {
+      console.log("asdasd");
+      comet2.style = 'transform: scaleX(-1);';
+      comet2.style.right = '120%';
+    } else {
+      comet2.style = 'transform: scaleX(1);';
+      comet2.style.right = '-120%';
+    }
+    if (isElementVisible(comet3)) {
+      comet3.style = 'transform: scaleX(1);';
+      comet3.style.left = '120%';
+    } else {
+      comet3.style = 'transform: scaleX(-1);';
+      comet3.style.left = '-120%';
+    }
   }
   if (whatsFocusSection() === 'portfolio') {
-    const astronauts = document.getElementById('astronauts');
-    const txtContainerHero = document.getElementById('txtContainerHero');
-    astronauts.style.marginBottom = y * 1.5 + 'px';
-    txtContainerHero.style.marginBottom = y * 0.8 + 'px';
+    const comet3 = document.getElementById('comet3');
+    comet3.style = 'transform: scaleX(-1);';
+    comet3.style.left = '-120%';
+    
   }
   if (whatsFocusSection() === 'contact') {
     const astronauts = document.getElementById('astronauts');
@@ -196,3 +217,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+function isElementVisible(element) {
+  var rect = element.getBoundingClientRect();
+  console.log();
+  return rect.top >= 0;
+}

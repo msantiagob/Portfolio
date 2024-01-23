@@ -277,7 +277,7 @@ hr {
 #rocket {
   position: absolute;
   z-index: 100;
-  top: 1200px;
+  top: 2200px;
 }
 .textImportant {
   color: #00d8fe;
@@ -302,13 +302,23 @@ hr {
   justify-content: center;
   align-items: center;
 }
-.comets {
+.cometsLeft {
   position: absolute;
   z-index: 100;
   top: -150px;
-  left: -500px;
-}
+  left: -100%;
+  transition: left 1s ease-in-out;
+  transform: scaleX(1);
 
+}
+.cometsRight {
+  position: absolute;
+  z-index: 100;
+  top: -150px;
+  right: -100%;
+  transform: scaleX(-1);
+  transition: right 1s ease-in-out;
+}
 .mySlides {
   display: none;
   width: 40vw;
