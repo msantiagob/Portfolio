@@ -10,7 +10,6 @@ function handleIndicator(el) {
   indicator.style.width = `${el.offsetWidth}px`;
   indicator.style.left = `${el.offsetLeft}px`;
   indicator.style.backgroundColor = el.getAttribute('active-color');
-console.log(el);
   el.classList.add('is-active');
   el.style.color = el.getAttribute('active-color');
 }
@@ -31,11 +30,18 @@ function findNearestSection() {
       closestSection = sectionId;
     }
   });
+  whatsFocusSection(closestSection);
   activateButtonForSection(closestSection);
 }
-
+let focusSections = 'hero';
+function whatsFocusSection(param) {
+  if (param) {
+    focusSections = param;
+  }
+  return focusSections;
+}
 function activateButtonForSection(sectionId) {
-  if ("contact") {
+  if ('contact') {
     items.forEach((item) => {
       item.classList.remove('is-active');
       item.removeAttribute('style');
@@ -131,6 +137,42 @@ window.onscroll = function () {
     containerNav.style.height = '20vh';
     logo.style.width = '80px';
     txtLogo.style.fontSize = '24px';
+  }
+  if (whatsFocusSection() === 'hero') {
+    const astronauts = document.getElementById('astronauts');
+    const txtContainerHero = document.getElementById('txtContainerHero');
+    astronauts.style.marginBottom = y * 1.3 + 'px';
+    txtContainerHero.style.marginBottom = y * 0.6 + 'px';
+  }
+  if (whatsFocusSection() === 'aboutMe') {
+    const rocket = document.getElementById('rocket');
+    const sectionHero = document.getElementById('aboutMe');
+    let secHero = sectionHero.getBoundingClientRect();
+
+    rocket.style.top = 700+secHero.bottom*1+ 'px';
+
+  }
+  if (whatsFocusSection() === 'skills') {
+    const astronauts = document.getElementById('astronauts');
+    const txtContainerHero = document.getElementById('txtContainerHero');
+    astronauts.style.marginBottom = y * 1.5 + 'px';
+    txtContainerHero.style.marginBottom = y * 0.8 + 'px';
+    const section = document.getElementById('aboutMe');
+    let sec = section.getBoundingClientRect();
+
+    rocket.style.top = 700+sec.bottom*1+ 'px';
+  }
+  if (whatsFocusSection() === 'portfolio') {
+    const astronauts = document.getElementById('astronauts');
+    const txtContainerHero = document.getElementById('txtContainerHero');
+    astronauts.style.marginBottom = y * 1.5 + 'px';
+    txtContainerHero.style.marginBottom = y * 0.8 + 'px';
+  }
+  if (whatsFocusSection() === 'contact') {
+    const astronauts = document.getElementById('astronauts');
+    const txtContainerHero = document.getElementById('txtContainerHero');
+    astronauts.style.marginBottom = y * 1.5 + 'px';
+    txtContainerHero.style.marginBottom = y * 0.8 + 'px';
   }
 };
 

@@ -12,7 +12,7 @@ body {
 }
 h1 {
   font-size: 55px;
-  text-align: center;
+  text-align: left;
   line-height: 1.06;
   margin: 20px 0 50px 0;
 }
@@ -39,6 +39,13 @@ hr {
   border-top: 1px solid white;
   width: 100%;
   margin-bottom: 20px;
+}
+.subTitle{
+  margin-bottom: 40px;
+}
+.containersSkills{
+  margin: 30px 0;
+  position: relative;
 }
 .custom-btn {
   color: #fff;
@@ -249,8 +256,8 @@ hr {
 }
 .fade {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   flex-direction: column;
   width: 70%;
   background-color: rgba(0, 0, 0, 0.617);
@@ -269,6 +276,8 @@ hr {
 }
 #rocket {
   position: absolute;
+  z-index: 100;
+  top: 1200px;
 }
 .textImportant {
   color: #00d8fe;
@@ -280,7 +289,9 @@ hr {
   align-items: flex-start;
   flex-direction: column;
 }
-
+#skills{
+  margin-top: 100px;
+}
 .imgSkills {
   margin: 0;
   width: 12%;
@@ -291,8 +302,11 @@ hr {
   justify-content: center;
   align-items: center;
 }
-#comet {
+.comets {
   position: absolute;
+  z-index: 100;
+  top: -150px;
+  left: -500px;
 }
 
 .mySlides {
@@ -518,6 +532,12 @@ img {
 .textContainer p{
   font-size: 16px;
   margin-bottom: 10px;
+}
+#containerAboutMe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #textAboutMe{
   padding: 0 120px;
