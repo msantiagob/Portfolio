@@ -148,7 +148,7 @@ window.onscroll = function () {
     const rocket = document.getElementById('rocket');
     const sectionHero = document.getElementById('aboutMe');
     let secHero = sectionHero.getBoundingClientRect();
-
+    rocket.style.display = "block";
     rocket.style.top = 700 + secHero.bottom * 1 + 'px';
   }
   if (whatsFocusSection() === 'skills') {
@@ -187,7 +187,9 @@ window.onscroll = function () {
     const comet3 = document.getElementById('comet3');
     comet3.style = 'transform: scaleX(-1);';
     comet3.style.left = '-120%';
-    
+    const portfolio = document.getElementById('portfolio');
+    portfolio.style.opacity = 1;
+
   }
   if (whatsFocusSection() === 'contact') {
     const astronauts = document.getElementById('astronauts');
