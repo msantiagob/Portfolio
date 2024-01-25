@@ -161,31 +161,31 @@ window.onscroll = function () {
     const comet2 = document.getElementById('comet2');
     const comet3 = document.getElementById('comet3');
     if (isElementVisible(comet1)) {
-      comet1.style = 'transform: scaleX(1);';
+      comet1.style = 'transform: scaleX(1) rotate(-45deg)';
       comet1.style.left = '120%';
     } else {
-      comet1.style = 'transform: scaleX(-1);';
+      comet1.style = 'transform: scaleX(-1) rotate(-45deg)';
       comet1.style.left = '-120%';
     }
     if (isElementVisible(comet2)) {
       console.log("asdasd");
-      comet2.style = 'transform: scaleX(-1);';
+      comet2.style = 'transform: scaleX(-1) rotate(-45deg);';
       comet2.style.right = '120%';
     } else {
-      comet2.style = 'transform: scaleX(1);';
+      comet2.style = 'transform: scaleX(1) rotate(-45deg);';
       comet2.style.right = '-120%';
     }
     if (isElementVisible(comet3)) {
-      comet3.style = 'transform: scaleX(1);';
+      comet3.style = 'transform: scaleX(1) rotate(-45deg);';
       comet3.style.left = '120%';
     } else {
-      comet3.style = 'transform: scaleX(-1);';
+      comet3.style = 'transform: scaleX(-1) rotate(-45deg);';
       comet3.style.left = '-120%';
     }
   }
   if (whatsFocusSection() === 'portfolio') {
     const comet3 = document.getElementById('comet3');
-    comet3.style = 'transform: scaleX(-1);';
+    comet3.style = 'transform: scaleX(-1) rotate(-45deg);';
     comet3.style.left = '-120%';
     const portfolio = document.getElementById('portfolio');
     portfolio.style.opacity = 1;

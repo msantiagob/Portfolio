@@ -309,9 +309,10 @@ hr {
   z-index: 100;
   top: -150px;
   left: -100%;
-  transition: left 1s ease-in-out;
-  transform: scaleX(1);
-
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: left 1.7s ;
+  transform: rotate(-45deg);
+  transform: scaleX(1) rotate(-45deg);
 }
 .cometsRight {
   position: absolute;
@@ -319,7 +320,9 @@ hr {
   top: -150px;
   right: -100%;
   transform: scaleX(-1);
-  transition: right 1s ease-in-out;
+  transform: rotate(-45deg);
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: right 1.7s ;
 }
 .mySlides {
   display: none;
