@@ -168,7 +168,6 @@ window.onscroll = function () {
       comet1.style.left = '-120%';
     }
     if (isElementVisible(comet2)) {
-      console.log("asdasd");
       comet2.style = 'transform: scaleX(-1) rotate(-45deg);';
       comet2.style.right = '120%';
     } else {
@@ -222,6 +221,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function isElementVisible(element) {
   var rect = element.getBoundingClientRect();
-  console.log();
   return rect.top >= 0;
 }
