@@ -148,7 +148,7 @@ window.onscroll = function () {
     const rocket = document.getElementById('rocket');
     const sectionHero = document.getElementById('aboutMe');
     let secHero = sectionHero.getBoundingClientRect();
-    rocket.style.display = "block";
+    rocket.style.display = 'block';
     rocket.style.top = 700 + secHero.bottom * 1 + 'px';
   }
   if (whatsFocusSection() === 'skills') {
@@ -188,7 +188,6 @@ window.onscroll = function () {
     comet3.style.left = '-120%';
     const portfolio = document.getElementById('portfolio');
     portfolio.style.opacity = 1;
-
   }
   if (whatsFocusSection() === 'contact') {
     const astronauts = document.getElementById('astronauts');
@@ -223,3 +222,10 @@ function isElementVisible(element) {
   var rect = element.getBoundingClientRect();
   return rect.top >= 0;
 }
+
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  e.target.elements.name.value = '';
+  e.target.elements.email.value = '';
+  e.target.elements.message.value = '';
+});
