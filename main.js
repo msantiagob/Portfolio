@@ -163,9 +163,14 @@ window.onscroll = function () {
     if (isElementVisible(comet1)) {
       comet1.style = 'transform: scaleX(1) rotate(-45deg)';
       comet1.style.left = '120%';
+      let elementsCA1 = document.getElementsByClassName('CA1');
+      for (var i = 0; i < elementsCA1.length; i++) {
+        elementsCA1[i].style.opacity = 1;
+      }
     } else {
       comet1.style = 'transform: scaleX(-1) rotate(-45deg)';
       comet1.style.left = '-120%';
+
     }
     if (isElementVisible(comet2)) {
       comet2.style = 'transform: scaleX(-1) rotate(-45deg);';
@@ -173,13 +178,22 @@ window.onscroll = function () {
     } else {
       comet2.style = 'transform: scaleX(1) rotate(-45deg);';
       comet2.style.right = '-120%';
+      let elementsCA2 = document.getElementsByClassName('CA2');
+      for (var i = 0; i < elementsCA2.length; i++) {
+        elementsCA2[i].style.opacity = 1;
+      }
     }
     if (isElementVisible(comet3)) {
       comet3.style = 'transform: scaleX(1) rotate(-45deg);';
       comet3.style.left = '120%';
+
     } else {
       comet3.style = 'transform: scaleX(-1) rotate(-45deg);';
       comet3.style.left = '-120%';
+      let elementsCA3 = document.getElementsByClassName('CA3');
+      for (var i = 0; i < elementsCA3.length; i++) {
+        elementsCA3[i].style.opacity = 1;
+      }
     }
   }
   if (whatsFocusSection() === 'portfolio') {

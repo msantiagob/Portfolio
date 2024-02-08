@@ -463,10 +463,11 @@ img {
   cursor: pointer;
   transition: 0.3s;
   width: 35vw;
+  transition: transform 0.3s ease;
 }
 
 .modalImg:hover {
-  opacity: 0.7;
+  transform: scale(1.1);
 }
 
 /* The Modal (background) */
@@ -796,14 +797,13 @@ textarea {
   margin: 10px 0;
 }
 
-#satellite{
+#satellite {
   position: absolute;
   bottom: 60px;
   left: 0px;
   width: 200px;
-
 }
-#imgCode{
+#imgCode {
   position: absolute;
   right: 20px;
   top: 80px;
@@ -878,7 +878,50 @@ textarea {
     width: 99%;
   }
 }
+.CA1,
+.CA2,
+.CA3 {
+  opacity: 0;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+.CA1:hover,
+.CA2:hover,
+.CA3:hover {
+  box-shadow:0px 0px 28px -16px #ffffff inset;
+  border-radius:50% ;
+}
 
+.SA1 {
+  transition: opacity 4s ease;
+}
+.SA2 {
+  transition: opacity 4.2s ease;
+}
+.SA3 {
+  transition: opacity 4.4s ease;
+}
+.SA4 {
+  transition: opacity 5.5s ease;
+}
+.SA5 {
+  transition: opacity 5.6s ease;
+}
+.SA6 {
+  transition: opacity 5.7s ease;
+}
+.SA6 {
+  transition: opacity 6.1s ease;
+}
+.SA6 {
+  transition: opacity 6.5s ease;
+}
+.SA7 {
+  transition: opacity 6s ease;
+}
+.SA8 {
+  transition: opacity 6.1s ease;
+}
 .bg-animation {
   position: fixed;
   top: 0;
