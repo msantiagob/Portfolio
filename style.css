@@ -1,14 +1,11 @@
-@media screen and (min-width: 1910px) {
-  html {
-    font-size: 40px;
-  }
+html{
+  font-size: 16px;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background-color: black;
   color: white;
@@ -17,6 +14,32 @@ body {
   box-sizing: border-box;
   font-size: 1rem;
 }
+.sections {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 60px 0;
+}
+#containerAboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 1910px) {
+  html {
+    font-size: 25px;
+  }
+  #containerAboutMe {
+margin-top:-400px ;
+  }
+}
+
+
+
 h1 {
   font-size: 5rem;
   text-align: left;
@@ -41,7 +64,7 @@ h3 {
   margin: 0px 0 5px 0;
 }
 p {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-family: 'Lato', 'Poppins', sans-serif;
   text-align: center;
 }
@@ -278,18 +301,7 @@ p {
   width: 70%;
   background-color: rgba(0, 0, 0, 0.617);
 }
-.sections {
-  /* background-image: url('assets/background.svg'); */
-  /* background-repeat: repeat;
-  background-position: center center; */
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 60px 0;
-}
+
 #rocket {
   position: absolute;
   z-index: 100;
@@ -567,12 +579,7 @@ img {
   font-size: 16px;
   margin-bottom: 10px;
 }
-#containerAboutMe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+
 #textAboutMe {
   padding: 0 120px;
   margin: 0px 0 50px 0;
