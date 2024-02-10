@@ -1,5 +1,21 @@
 const indicator = document.querySelector('.nav-indicator');
 const items = document.querySelectorAll('.nav-item');
+const widthWindow = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;;
+if (widthWindow < 1023) {
+  function watchLinks() {
+    const links = document.getElementById('myLinks');
+    const links = document.getElementById('myLinks');
+
+    if (links.style.display === 'block') {
+      links.style.display = 'none';
+      links.style.marginLeft = '100vw';
+    } else {
+      links.style.display = 'block';
+      links.style.marginLeft = '20vw';
+    }
+  }
+}
+
 
 function handleIndicator(el) {
   items.forEach((item) => {
@@ -86,19 +102,19 @@ function showSlides(n) {
   if (n < 1) {
     slideIndex = slides.length;
   }
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none';
   }
-  for (i = 0; i < dots.length; i++) {
+  for (let i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(' active', '');
   }
   slides[slideIndex - 1].style.display = 'block';
   dots[slideIndex - 1].className += ' active';
 }
 
-var modal = document.getElementById('myModal');
-var modalImg = document.getElementById('img01');
-var images = document.querySelectorAll('.modalImg');
+const modal = document.getElementById('myModal');
+const modalImg = document.getElementById('img01');
+const images = document.querySelectorAll('.modalImg');
 images.forEach(function (img) {
   img.onclick = function () {
     modal.style.display = 'block';
@@ -108,7 +124,7 @@ images.forEach(function (img) {
 });
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName('close')[0];
+const span = document.getElementsByClassName('close')[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
@@ -128,13 +144,13 @@ window.onscroll = function () {
     const containerNav = document.getElementById('containerNav');
     const logo = document.getElementById('logo');
     const txtLogo = document.getElementById('txtLogo');
-    containerNav.style.height = '10vh';
+    containerNav.style = 'min-height:10vh';
     logo.style.width = '60px';
     txtLogo.style.fontSize = '18px';
   }
   if (y < 100) {
     const containerNav = document.getElementById('containerNav');
-    containerNav.style.height = '20vh';
+    containerNav.style = 'min-height:20vh';
     logo.style.width = '80px';
     txtLogo.style.fontSize = '24px';
   }
@@ -164,13 +180,12 @@ window.onscroll = function () {
       comet1.style = 'transform: scaleX(1) rotate(-45deg)';
       comet1.style.left = '120%';
       let elementsCA1 = document.getElementsByClassName('CA1');
-      for (var i = 0; i < elementsCA1.length; i++) {
+      for (let i = 0; i < elementsCA1.length; i++) {
         elementsCA1[i].style.opacity = 1;
       }
     } else {
       comet1.style = 'transform: scaleX(-1) rotate(-45deg)';
       comet1.style.left = '-120%';
-
     }
     if (isElementVisible(comet2)) {
       comet2.style = 'transform: scaleX(-1) rotate(-45deg);';
@@ -179,19 +194,18 @@ window.onscroll = function () {
       comet2.style = 'transform: scaleX(1) rotate(-45deg);';
       comet2.style.right = '-120%';
       let elementsCA2 = document.getElementsByClassName('CA2');
-      for (var i = 0; i < elementsCA2.length; i++) {
+      for (let i = 0; i < elementsCA2.length; i++) {
         elementsCA2[i].style.opacity = 1;
       }
     }
     if (isElementVisible(comet3)) {
       comet3.style = 'transform: scaleX(1) rotate(-45deg);';
       comet3.style.left = '120%';
-
     } else {
       comet3.style = 'transform: scaleX(-1) rotate(-45deg);';
       comet3.style.left = '-120%';
       let elementsCA3 = document.getElementsByClassName('CA3');
-      for (var i = 0; i < elementsCA3.length; i++) {
+      for (let i = 0; i < elementsCA3.length; i++) {
         elementsCA3[i].style.opacity = 1;
       }
     }
@@ -233,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function isElementVisible(element) {
-  var rect = element.getBoundingClientRect();
+  const rect = element.getBoundingClientRect();
   return rect.top >= 0;
 }
 
@@ -243,3 +257,7 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
   e.target.elements.email.value = '';
   e.target.elements.message.value = '';
 });
+
+function menuBtnFunction(menuBtn) {
+  menuBtn.classList.toggle('activeMenu');
+}
