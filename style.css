@@ -2160,6 +2160,9 @@ input:-webkit-autofill:active {
   #containerNav a.icon {
     display: none;
   }
+  #spaceAbout {
+    display: none;
+  }
 }
 
 /*responsive mobile*/
@@ -2172,8 +2175,24 @@ input:-webkit-autofill:active {
     font-size: 3rem;
     text-align: center;
   }
+  h2 {
+    font-size: 1.8rem;
+    margin: 30px 10px;
+    letter-spacing: 1px;
+  }
   h4 {
     white-space: nowrap;
+  }
+  #rocket {
+    margin-top: 150px;
+  }
+  #textAboutMe {
+    margin: 0 20px;
+    padding: 0;
+  }
+  #spaceAbout {
+    display: block;
+    height: 20px;
   }
   #astronauts {
     display: block;
@@ -2181,9 +2200,8 @@ input:-webkit-autofill:active {
   #hero {
     flex-direction: column;
   }
-  #txtContainerHero{
+  #txtContainerHero {
     width: 100vw;
-
   }
   #imageContainerHero {
     width: 100%;
@@ -2193,13 +2211,13 @@ input:-webkit-autofill:active {
     z-index: -1;
     top: 50vh;
   }
-.fade{
-  background-color: transparent;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  width: 100vw;
-}
+  .fade {
+    background-color: transparent;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+  }
   .all-btn {
     padding: 12% 5%;
   }
@@ -2315,8 +2333,6 @@ input:-webkit-autofill:active {
     transition: margin-left 0.8s ease-in-out;
   }
 
-
-
   #bgMenu {
     position: fixed;
     left: 0;
@@ -2363,11 +2379,13 @@ input:-webkit-autofill:active {
     font-size: 14px;
   }
   #menuMobile {
-    background-color: #000000;
+    background-color: #00000080;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .sections {
   }
   .nav-indicator {
     display: none;
