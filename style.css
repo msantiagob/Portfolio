@@ -144,7 +144,7 @@ p {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   width: 100vw;
-  min-height: 20vh;
+  min-height: 5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -523,7 +523,9 @@ img {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
-
+.comets{
+  width: 500px;
+}
 @-webkit-keyframes zoom {
   from {
     -webkit-transform: scale(0);
@@ -2183,11 +2185,17 @@ input:-webkit-autofill:active {
   h4 {
     white-space: nowrap;
   }
+.comets{
+  width: 300px;
+}
+.cometsLeft{
+  top:5px
+}
   #rocket {
     margin-top: 150px;
   }
   #textAboutMe {
-    margin: 0 20px;
+    margin: 20px;
     padding: 0;
   }
   #spaceAbout {
@@ -2325,11 +2333,11 @@ input:-webkit-autofill:active {
   #containerNav #myLinks {
     display: grid;
     overflow: hidden;
-    background-color: black;
+    background-color: #000000d6;
     width: 80vw;
     padding-bottom: 20px;
     margin-left: 100vw;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1px);
     transition: margin-left 0.8s ease-in-out;
   }
 
@@ -2340,7 +2348,7 @@ input:-webkit-autofill:active {
     width: 100vw;
     height: 100vh;
     z-index: -10;
-    background-color: #00000090;
+    background-color: #00000060;
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
   }
@@ -2379,17 +2387,18 @@ input:-webkit-autofill:active {
     font-size: 14px;
   }
   #menuMobile {
-    background-color: #00000080;
+    background-color: #000000d6;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .sections {
+    backdrop-filter: blur(1px);
+    margin-bottom: -1px;
   }
   .nav-indicator {
     display: none;
   }
+
 }
 
 @media screen and (max-width: 340px) {
@@ -2398,3 +2407,5 @@ input:-webkit-autofill:active {
     text-align: center;
   }
 }
+
+

@@ -9,16 +9,18 @@ if (widthWindow < 1025) {
     const bgMenu = document.getElementById('bgMenu');
     const links = document.getElementById('myLinks');
     const btnMenu = document.getElementById('btnMenu');
+
     if (links.style.marginLeft === '20vw') {
       btnMenu.classList.remove('activeMenu');
       bgMenu.style.zIndex = '-10';
       bgMenu.style.opacity = '0';
       links.style.marginLeft = '100vw';
+      links.style.height = '0';
     } else {
-
       btnMenu.classList.add('activeMenu');
       bgMenu.style.zIndex = '200';
       bgMenu.style.opacity = '1';
+      links.style.height = '100%';
       links.style.marginLeft = '20vw';
     }
   }
@@ -185,21 +187,21 @@ window.onscroll = function () {
     const comet3 = document.getElementById('comet3');
     if (isElementVisible(comet1)) {
       comet1.style = 'transform: scaleX(1) rotate(-45deg)';
-      comet1.style.left = '120%';
+      comet1.style.left = '100vw';
       let elementsCA1 = document.getElementsByClassName('CA1');
       for (let i = 0; i < elementsCA1.length; i++) {
         elementsCA1[i].style.opacity = 1;
       }
     } else {
       comet1.style = 'transform: scaleX(-1) rotate(-45deg)';
-      comet1.style.left = '-120%';
+      comet1.style.left = '-100vw';
     }
     if (isElementVisible(comet2)) {
       comet2.style = 'transform: scaleX(-1) rotate(-45deg);';
-      comet2.style.right = '120%';
+      comet2.style.right = '100vw';
     } else {
       comet2.style = 'transform: scaleX(1) rotate(-45deg);';
-      comet2.style.right = '-120%';
+      comet2.style.right = '-100vw';
       let elementsCA2 = document.getElementsByClassName('CA2');
       for (let i = 0; i < elementsCA2.length; i++) {
         elementsCA2[i].style.opacity = 1;
@@ -207,10 +209,10 @@ window.onscroll = function () {
     }
     if (isElementVisible(comet3)) {
       comet3.style = 'transform: scaleX(1) rotate(-45deg);';
-      comet3.style.left = '120%';
+      comet3.style.left = '100vw';
     } else {
       comet3.style = 'transform: scaleX(-1) rotate(-45deg);';
-      comet3.style.left = '-120%';
+      comet3.style.left = '-100vw';
       let elementsCA3 = document.getElementsByClassName('CA3');
       for (let i = 0; i < elementsCA3.length; i++) {
         elementsCA3[i].style.opacity = 1;
@@ -250,6 +252,39 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       }
     });
+  });
+  let swiper = new Swiper('.carousel-gallery .swiper-container', {
+    effect: 'slide',
+    speed: 900,
+    slidesPerView: 5,
+    spaceBetween: 20,
+    simulateTouch: true,
+    autoplay: {
+      delay: 5000,
+      stopOnLastSlide: false,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.carousel-gallery .swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      // when window width is <= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 5,
+      },
+      // when window width is <= 480px
+      425: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      // when window width is <= 640px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
   });
 });
 
