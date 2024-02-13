@@ -3,38 +3,44 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" />
 
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
 
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
 
   <title>SONMYD</title>
 </head>
 
-<body>
-
-  <header id="header">
+<body id="header">
     <div id="containerNav">
-      <div id="containerLogo">
-        <img src="assets/icon.png" alt="Logo SONMYD" loading="lazy" title="Logo SONMYD" id="logo" />
-        <span id="txtLogo"> SONMYD </span>
+      <div id="menuMobile">
+        <a href="#hero" id="containerLogo">
+          <img src="assets/icon.png" alt="Logo SONMYD" loading="lazy" title="Logo SONMYD" id="logo" />
+          <span id="txtLogo"> SONMYD </span>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="watchLinks()">
+          <div class="all-btn">
+            <div id="btnMenu" class="menu-btn-6" onclick="menuBtnFunction(this)">
+              <span></span>
+            </div>
+          </div>
+        </a>
       </div>
-
-      <nav class="nav">
-        <a href="#hero" class="nav-item is-active" active-color="#e8092d" data-section-id="hero">Inicio</a>
-        <a href="#aboutMe" class="nav-item" active-color="#e8092d" data-section-id="aboutMe">Acerca de mí</a>
-        <a href="#skills" class="nav-item" active-color="#e8092d" data-section-id="skills">Habilidades</a>
-        <a href="#portfolio" class="nav-item" active-color="#e8092d" data-section-id="portfolio">Portafolio</a>
+      <nav class="nav" id="myLinks">
+        <a href="#hero" class="nav-item is-active" active-color="#e8092d" data-section-id="hero" onclick="watchLinks()">Inicio</a>
+        <a href="#aboutMe" class="nav-item" active-color="#e8092d" data-section-id="aboutMe" onclick="watchLinks()">Acerca de mí</a>
+        <a href="#skills" class="nav-item" active-color="#e8092d" data-section-id="skills" onclick="watchLinks()">Habilidades</a>
+        <a href="#portfolio" class="nav-item" active-color="#e8092d" data-section-id="portfolio" onclick="watchLinks()">Portafolio</a>
         <div id="btnContact">
-          <a href="#contact" class="nav-item-contact" data-section-id="contact">Contáctame</a>
+          <a href="#contact" class="nav-item-contact" data-section-id="contact" onclick="watchLinks()">Contáctame</a>
         </div>
         <span class="nav-indicator"></span>
       </nav>
     </div>
+    <div id="bgMenu"></div>
     <div id="hero">
       <div id="txtContainerHero">
         <div class="fade">
@@ -47,10 +53,10 @@
         <!-- <img id="astronauts" src="assets/astronauts.gif"
           alt="Descubre la maravilla del espacio en este GIF animado, donde dos intrépidos astronautas flotan con gracia mientras orbitan alrededor de un planeta vivo y vibrante. Este cautivador contenido visual te sumergirá en una experiencia cósmica única. ¡Explora la exploración espacial, la ingravidez y la belleza de los astros en este impresionante GIF animado de astronautas y planetas en órbita!"
           title="Astronauts" /> -->
-          <video id="astronauts" width="700" height="700" autoplay loop muted>
-            <source src="assets/astronaut.mp4" type="video/mp4">
-            Tu navegador no soporta la etiqueta de video.
-          </video>
+        <video id="astronauts" width="700" height="700" autoplay loop muted>
+          <source src="assets/astronaut.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
       </div>
 
     </div>
@@ -110,7 +116,7 @@
         <div class="containersSkills">
           <img id="comet3" class="cometsLeft" src="assets/giphy.gif" alt="" width="500">
           <h3>Mentor</h3>
-          <hr id="dividerThree" class="dividerSkills"/>
+          <hr id="dividerThree" class="dividerSkills" />
           <div class="containerImagesSkills">
             <img class="imgSkills SA7 CA3 " src="assets/github.png" alt="" />
             <img class="imgSkills SA6 CA3 " src="assets/git.png" alt="" />
@@ -238,7 +244,7 @@
           </div>
           <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
           <button class="custom-btn btn-5 send-button" id="submit" type="submit" value="SEND">
-              <span class="send-text">Enviar</span>
+            <span class="send-text">Enviar</span>
           </button>
         </form>
         <!-- Right contact page -->
@@ -266,7 +272,7 @@
                 <i class="fa fa-instagram" aria-hidden="true"></i></a>
             </li>
           </ul>
-          <hr  class="dividerContact">
+          <hr class="dividerContact">
           <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
         </div>
       </div>
@@ -277,7 +283,6 @@
         Tu navegador no soporta la etiqueta de video.
       </video>
     </section>
-  </header>
 
   <div class="bg-animation">
     <div id="stars"></div>
@@ -287,7 +292,6 @@
   </div>
 
   <script src="https://kit.fontawesome.com/39c4c1d81e.js" crossorigin="anonymous"></script>
-
   <script src="main.js"></script>
 </body>
 

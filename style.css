@@ -1,4 +1,4 @@
-html{
+html {
   font-size: 16px;
 }
 * {
@@ -13,6 +13,9 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
   font-size: 1rem;
+}
+input {
+  font-family: monospace, 'Montserrat';
 }
 .sections {
   width: 100vw;
@@ -29,17 +32,6 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media screen and (min-width: 1910px) {
-  html {
-    font-size: 25px;
-  }
-  #containerAboutMe {
-margin-top:-400px ;
-  }
-}
-
-
-
 h1 {
   font-size: 5rem;
   text-align: left;
@@ -59,14 +51,16 @@ h4 {
   color: #e8092d;
 }
 h3 {
-  font-family: 'Lato', 'Poppins', sans-serif;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
   font-size: 26px;
   margin: 0px 0 5px 0;
+  font-weight: 400;
 }
 p {
   font-size: 1.2rem;
-  font-family: 'Lato', 'Poppins', sans-serif;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
   text-align: center;
+  font-weight: 400;
 }
 
 .dividerSkills {
@@ -144,12 +138,13 @@ p {
   background-position: center center;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 #containerNav {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   width: 100vw;
-  height: 20vh;
+  min-height: 20vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -161,13 +156,15 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: inherit;
 }
 #logo {
   width: 80px;
   transition: width 0.5s ease-in-out;
 }
 #txtLogo {
-  font-family: 'Lato', 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 24px;
   transition: font-size 0.5s ease-in-out;
@@ -682,7 +679,7 @@ textarea {
 
 .send-text {
   display: block;
-  font: 700 17px 'Lato', sans-serif;
+  font: 700 17px 'Montserrat', sans-serif;
   letter-spacing: 2px;
 }
 
@@ -708,7 +705,7 @@ textarea {
 }
 
 .contact-text {
-  font: 300 18px 'Lato', sans-serif;
+  font: 300 18px 'Montserrat', sans-serif;
   letter-spacing: 1.9px;
   color: #bbb;
 }
@@ -890,13 +887,12 @@ textarea {
 .CA3 {
   opacity: 0;
   cursor: pointer;
-  transition: box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .CA1:hover,
 .CA2:hover,
 .CA3:hover {
-  box-shadow:0px 0px 28px -16px #ffffff inset;
-  border-radius:50% ;
+  transform: scale(1.1);
 }
 
 .SA1 {
@@ -2150,4 +2146,237 @@ input:-webkit-autofill:active {
   -webkit-text-fill-color: #ffffff;
   transition: background-color 5000s ease-in-out 0s;
   box-shadow: inset 0 0 20px 20px #23232329;
+}
+
+@media screen and (min-width: 1910px) {
+  html {
+    font-size: 25px;
+  }
+  #containerAboutMe {
+    margin-top: -400px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #containerNav a.icon {
+    display: none;
+  }
+}
+
+/*responsive mobile*/
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  h4 {
+    white-space: nowrap;
+  }
+  #astronauts {
+    display: block;
+  }
+  #hero {
+    flex-direction: column;
+  }
+  #txtContainerHero{
+    width: 100vw;
+
+  }
+  #imageContainerHero {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    height: 500px;
+    z-index: -1;
+    top: 50vh;
+  }
+.fade{
+  background-color: transparent;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100vw;
+}
+  .all-btn {
+    padding: 12% 5%;
+  }
+
+  .all-btn div {
+    float: left;
+    margin-right: 10%;
+  }
+
+  .all-btn div:last-child {
+    margin-right: 0;
+  }
+
+  .menu-btn-6 {
+    height: 32px;
+    width: 40px;
+    cursor: pointer;
+  }
+
+  .menu-btn-6 span,
+  .menu-btn-6 span::before,
+  .menu-btn-6 span::after {
+    background: #795548;
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    margin-top: 13px;
+
+    -webkit-transition: 0.2s ease-in-out 0.2s;
+    -moz-transition: 0.2s ease-in-out 0.2s;
+    -o-transition: 0.2s ease-in-out 0.2s;
+    transition: 0.2s ease-in-out 0.2s;
+  }
+
+  .menu-btn-6 span::before {
+    margin-top: -12px;
+
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+
+  .menu-btn-6 span::after {
+    margin-top: 12px;
+
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+
+  .menu-btn-6.activeMenu span {
+    background: transparent;
+
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+
+  .menu-btn-6.activeMenu span::before {
+    margin-top: 0;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -o-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+
+  .menu-btn-6.activeMenu span::after {
+    margin-top: 0;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -o-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+  #containerNav {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  #containerNav #myLinks {
+    display: grid;
+    overflow: hidden;
+    background-color: black;
+    width: 80vw;
+    padding-bottom: 20px;
+    margin-left: 100vw;
+    backdrop-filter: blur(10px);
+    transition: margin-left 0.8s ease-in-out;
+  }
+
+
+
+  #bgMenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    background-color: #00000090;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+  }
+  #containerNav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  #containerNav a.icon {
+    background: black;
+    display: block;
+    padding-top: 10px;
+    padding-right: 20px;
+  }
+
+  #containerNav a:hover {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .activenav {
+    background-color: #04aa6d;
+    color: white;
+  }
+
+  #containerLogo {
+    padding-top: 25px;
+    padding-left: 20px;
+  }
+  #logo {
+    width: 60px;
+  }
+  #txtLogo {
+    font-size: 14px;
+  }
+  #menuMobile {
+    background-color: #000000;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-indicator {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 }
