@@ -17,11 +17,13 @@ if (widthWindow < 1025) {
       links.style.marginLeft = '100vw';
       links.style.height = '0';
     } else {
+
       btnMenu.classList.add('activeMenu');
       bgMenu.style.zIndex = '200';
       bgMenu.style.opacity = '1';
       links.style.height = '100%';
       links.style.marginLeft = '20vw';
+
     }
   }
 }
@@ -253,39 +255,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
-  let swiper = new Swiper('.carousel-gallery .swiper-container', {
-    effect: 'slide',
-    speed: 900,
-    slidesPerView: 5,
-    spaceBetween: 20,
-    simulateTouch: true,
-    autoplay: {
-      delay: 5000,
-      stopOnLastSlide: false,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.carousel-gallery .swiper-pagination',
-      clickable: true,
-    },
-    breakpoints: {
-      // when window width is <= 320px
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 5,
-      },
-      // when window width is <= 480px
-      425: {
-        slidesPerView: 2,
-        spaceBetween: 10,
-      },
-      // when window width is <= 640px
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-    },
-  });
+  
 });
 
 function isElementVisible(element) {
@@ -303,3 +273,4 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
 function menuBtnFunction(menuBtn) {
   menuBtn.classList.toggle('activeMenu');
 }
+
