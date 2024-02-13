@@ -2161,7 +2161,16 @@ input:-webkit-autofill:active {
     display: none;
   }
 }
+
+/*responsive mobile*/
+
 @media screen and (max-width: 1023px) {
+  #hero {
+    display: flex;
+    height: 100vh;
+    padding-top: 20vh;
+    padding-inline: 1%;
+  }
   html {
     font-size: 14px;
   }
@@ -2270,15 +2279,27 @@ input:-webkit-autofill:active {
   }
 
   #containerNav #myLinks {
-    display: none;
+    display: grid;
     overflow: hidden;
     background-color: black;
     width: 80vw;
     padding-bottom: 20px;
     margin-left: 100vw;
-    transition: margin-right 2s ease-in-out;
+    backdrop-filter: blur(10px);
+    transition: margin-left 0.8s ease-in-out;
   }
-
+#bgMenu{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  z-index: 100;
+  background-color: #00000090;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
   #containerNav a {
     color: white;
     text-decoration: none;

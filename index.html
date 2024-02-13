@@ -23,14 +23,14 @@
         </a>
         <a href="javascript:void(0);" class="icon" onclick="watchLinks()">
           <div class="all-btn">
-            <div class="menu-btn-6" onclick="menuBtnFunction(this)">
+            <div id="btnMenu" class="menu-btn-6" onclick="menuBtnFunction(this)">
               <span></span>
             </div>
           </div>
         </a>
       </div>
       <nav class="nav" id="myLinks">
-        <a href="#hero" class="nav-item" active-color="#e8092d" data-section-id="hero" onclick="watchLinks()">Inicio</a>
+        <a href="#hero" class="nav-item is-active" active-color="#e8092d" data-section-id="hero" onclick="watchLinks()">Inicio</a>
         <a href="#aboutMe" class="nav-item" active-color="#e8092d" data-section-id="aboutMe" onclick="watchLinks()">Acerca de mí</a>
         <a href="#skills" class="nav-item" active-color="#e8092d" data-section-id="skills" onclick="watchLinks()">Habilidades</a>
         <a href="#portfolio" class="nav-item" active-color="#e8092d" data-section-id="portfolio" onclick="watchLinks()">Portafolio</a>
@@ -40,6 +40,7 @@
         <span class="nav-indicator"></span>
       </nav>
     </div>
+    <div id="bgMenu"></div>
     <div id="hero">
       <div id="txtContainerHero">
         <div class="fade">

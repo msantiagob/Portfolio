@@ -1,21 +1,25 @@
 const indicator = document.querySelector('.nav-indicator');
 const items = document.querySelectorAll('.nav-item');
-const widthWindow = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;;
+const widthWindow =
+  window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth;
 if (widthWindow < 1023) {
   function watchLinks() {
+    const bgMenu = document.getElementById('bgMenu');
     const links = document.getElementById('myLinks');
-    const links = document.getElementById('myLinks');
-
-    if (links.style.display === 'block') {
-      links.style.display = 'none';
+    const btnMenu = document.getElementById('btnMenu');
+    if (links.style.marginLeft === '20vw') {
+      btnMenu.classList.remove('activeMenu');
+      bgMenu.style.opacity = '0';
       links.style.marginLeft = '100vw';
     } else {
-      links.style.display = 'block';
+      btnMenu.classList.add('activeMenu');
+      bgMenu.style.opacity = '1';
       links.style.marginLeft = '20vw';
     }
   }
 }
-
 
 function handleIndicator(el) {
   items.forEach((item) => {
