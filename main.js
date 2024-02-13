@@ -4,17 +4,20 @@ const widthWindow =
   window.innerWidth ||
   document.documentElement.clientWidth ||
   document.body.clientWidth;
-if (widthWindow < 1023) {
+if (widthWindow < 1025) {
   function watchLinks() {
     const bgMenu = document.getElementById('bgMenu');
     const links = document.getElementById('myLinks');
     const btnMenu = document.getElementById('btnMenu');
     if (links.style.marginLeft === '20vw') {
       btnMenu.classList.remove('activeMenu');
+      bgMenu.style.zIndex = '-10';
       bgMenu.style.opacity = '0';
       links.style.marginLeft = '100vw';
     } else {
+
       btnMenu.classList.add('activeMenu');
+      bgMenu.style.zIndex = '200';
       bgMenu.style.opacity = '1';
       links.style.marginLeft = '20vw';
     }

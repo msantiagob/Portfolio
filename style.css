@@ -2156,7 +2156,7 @@ input:-webkit-autofill:active {
     margin-top: -400px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   #containerNav a.icon {
     display: none;
   }
@@ -2164,16 +2164,42 @@ input:-webkit-autofill:active {
 
 /*responsive mobile*/
 
-@media screen and (max-width: 1023px) {
-  #hero {
-    display: flex;
-    height: 100vh;
-    padding-top: 20vh;
-    padding-inline: 1%;
-  }
+@media screen and (max-width: 1024px) {
   html {
     font-size: 14px;
   }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  h4 {
+    white-space: nowrap;
+  }
+  #astronauts {
+    display: block;
+  }
+  #hero {
+    flex-direction: column;
+  }
+  #txtContainerHero{
+    width: 100vw;
+
+  }
+  #imageContainerHero {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    height: 500px;
+    z-index: -1;
+    top: 50vh;
+  }
+.fade{
+  background-color: transparent;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100vw;
+}
   .all-btn {
     padding: 12% 5%;
   }
@@ -2288,18 +2314,20 @@ input:-webkit-autofill:active {
     backdrop-filter: blur(10px);
     transition: margin-left 0.8s ease-in-out;
   }
-#bgMenu{
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #000000;
-  z-index: 100;
-  background-color: #00000090;
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
-}
+
+
+
+  #bgMenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    background-color: #00000090;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+  }
   #containerNav a {
     color: white;
     text-decoration: none;
@@ -2343,5 +2371,12 @@ input:-webkit-autofill:active {
   }
   .nav-indicator {
     display: none;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
   }
 }
