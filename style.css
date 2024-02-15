@@ -2189,10 +2189,12 @@ input:-webkit-autofill:active {
     white-space: nowrap;
   }
   .comets {
-    width: 300px;
+    width: 200px;
+    top: 1vh;
+
   }
-  .cometsLeft {
-    top: 5px;
+  .comet2 {
+    position: absolute;
   }
   #rocket {
     margin-top: 220px;
