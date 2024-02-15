@@ -62,7 +62,9 @@ p {
   text-align: center;
   font-weight: 400;
 }
-
+.pt-50{
+padding-top: 40px;
+}
 .dividerSkills {
   border-top: 1px solid white;
   width: 100%;
@@ -501,18 +503,6 @@ img {
   width: 80%;
   max-width: 700px;
   z-index: 999;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
 }
 
 /* Add Animation */
@@ -2161,12 +2151,15 @@ input:-webkit-autofill:active {
 @media screen and (min-width: 1025px) {
   #containerNav a.icon {
     display: none;
+    visibility: hidden;
   }
   #spaceAbout {
     display: none;
+    visibility: hidden;
   }
-  .carousel{
+  .carousel {
     display: none;
+    visibility: hidden;
   }
 }
 
@@ -2185,19 +2178,37 @@ input:-webkit-autofill:active {
     margin: 30px 10px;
     letter-spacing: 1px;
   }
+  h3 {
+    padding-top: 5px;
+    font-size: 22px;
+  }
   h4 {
     white-space: nowrap;
+  }
+  .sections{
+    min-height: 80vh;
+  }
+  #modalTitle{
+    margin: 10px;
+  }
+  #myModal{
+    padding: 0 10px;
+  }
+  .paragraph {
+    display: none;
+  }
+  .modalImg {
+    width: 80%;
   }
   .comets {
     width: 200px;
     top: 1vh;
-
   }
   .comet2 {
     position: absolute;
   }
   #rocket {
-    margin-top: 220px;
+    margin-top: 450px;
   }
   #textAboutMe {
     margin: 20px;
@@ -2340,6 +2351,7 @@ input:-webkit-autofill:active {
     overflow: hidden;
     background-color: #000000d6;
     width: 80vw;
+    height: 0;
     padding-bottom: 20px;
     margin-left: 100vw;
     backdrop-filter: blur(1px);
@@ -2402,6 +2414,7 @@ input:-webkit-autofill:active {
   }
   .nav-indicator {
     display: none;
+    visibility: hidden;
   }
 
   .imageCarousel {
@@ -2468,11 +2481,12 @@ input:-webkit-autofill:active {
       transform: translateX(-60%);
     }
   }
-  .dividerSkills{
+  .dividerSkills {
     width: 80vw;
   }
   .containerImagesSkills {
     display: none;
+    visibility: hidden;
   }
 }
 

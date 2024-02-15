@@ -9,19 +9,18 @@ if (widthWindow < 1025) {
     const bgMenu = document.getElementById('bgMenu');
     const links = document.getElementById('myLinks');
     const btnMenu = document.getElementById('btnMenu');
-
+const container = document.getElementById('containerNav');
     if (links.style.marginLeft === '20vw') {
       btnMenu.classList.remove('activeMenu');
       bgMenu.style.zIndex = '-10';
       bgMenu.style.opacity = '0';
       links.style.marginLeft = '100vw';
+      setTimeout(height, 600);
       function height() {
-        if (links.style.marginLeft = '100vw') {
+        if ((links.style.marginLeft = '100vw')) {
           links.style.height = '0';
         }
-
       }
-      setTimeout(height, 5000);
     } else {
       btnMenu.classList.add('activeMenu');
       bgMenu.style.zIndex = '200';
@@ -130,11 +129,16 @@ function showSlides(n) {
 const modal = document.getElementById('myModal');
 const modalImg = document.getElementById('img01');
 const images = document.querySelectorAll('.modalImg');
+const modalParagraph = document.getElementById('modalParagraph');
+const modalTitle = document.getElementById('modalTitle');
+
 images.forEach(function (img) {
   img.onclick = function () {
     modal.style.display = 'block';
+    console.log(this.id);
     modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+    modalTitle.textContent = document.getElementById(`${this.id}Title`).textContent;
+    modalParagraph.textContent = document.getElementById(`${this.id}Pg`).textContent;
   };
 });
 

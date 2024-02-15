@@ -230,12 +230,12 @@
       <div class="sliderContainer">
         <div class="mySlides fade ">
           <img class="modalImg" src="assets/puntacana.png" title="Punta Cana Transfer - Captura de Pantalla del Diseño"
-            alt="Captura de pantalla que muestra el diseño interactivo de la plataforma Punta Cana Transfer, desarrollada con React y Ruby on Rails.">
+            alt="Captura de pantalla que muestra el diseño interactivo de la plataforma Punta Cana Transfer, desarrollada con React y Ruby on Rails." id="puntacana">
           <div class="textContainer">
-            <h3>Punta Cana Transfer
+            <h3 id="puntacanaTitle">Punta Cana Transfer
               <br>(React y Ruby on Rails):
             </h3>
-            <p>Colaboré en el desarrollo de la plataforma Punta Cana Transfer utilizando React para la interfaz de
+            <p id="puntacanaPg" class="paragraph" >Colaboré en el desarrollo de la plataforma Punta Cana Transfer utilizando React para la interfaz de
               usuario y Ruby on Rails para la lógica del servidor. Implementamos funcionalidades avanzadas como la
               reordenación de elementos con la librería react-beautiful-dnd, logrando una experiencia de usuario
               fluida y atractiva. </p>
@@ -246,13 +246,13 @@
         <div class="mySlides fade ">
           <img class="modalImg" src="assets/insurance.png"
             title="Sitio de Seguros (No code y personalización con CSS y JavaScript vanilla):"
-            alt="Vista previa de la página de seguros con personalización mediante CSS y JavaScript vanilla, creado utilizando una solución no code.">
+            alt="Vista previa de la página de seguros con personalización mediante CSS y JavaScript vanilla, creado utilizando una solución no code." id="insurance">
           <div class="textContainer">
-            <h3>Sitio de Seguros
+            <h3 id="insuranceTitle">Sitio de Seguros
               <br>(No code y personalización <br>
               con CSS y JavaScript vanilla):
             </h3>
-            <p>Diseñe y cree un sitio web para servicios de seguros mediante una solución no code alternativa a
+            <p id="insurancePg" class="paragraph">Diseñe y cree un sitio web para servicios de seguros mediante una solución no code alternativa a
               WordPress. Luego, personalicé la apariencia y el comportamiento utilizando CSS y JavaScript vanilla,
               asegurando una presentación única y funcionalidades específicas para las necesidades del cliente.</p>
             <a class="textImportant" href="">Ver Web</a>
@@ -260,11 +260,11 @@
         </div>
 
         <div class="mySlides fade ">
-          <img class="modalImg" src="assets/movies.png">
+          <img class="modalImg" src="assets/movies.png" id="movies">
           <div class="textContainer">
-            <h3>Proyecto React con autenticación <br> y API de películas:
+            <h3 id="moviesTitle">Proyecto React con autenticación <br> y API de películas:
             </h3>
-            <p>Desarrollé mi primer proyecto en React, incorporando funciones de autenticación para los usuarios y
+            <p id="moviesPg" class="paragraph">Desarrollé mi primer proyecto en React, incorporando funciones de autenticación para los usuarios y
               conectándome a una API de películas para mostrar información actualizada. Esta experiencia fortaleció mi
               comprensión de la construcción de aplicaciones React dinámicas y conectadas a servicios externos.</p>
             <a class="textImportant" href="">Ver Web</a>
@@ -272,12 +272,12 @@
         </div>
 
         <div class="mySlides fade ">
-          <img class="modalImg" src="assets/odontology.png">
+          <img class="modalImg" src="assets/odontology.png" id="odontology">
           <div class="textContainer">
-            <h3>Página web de Odontología con animaciones de scroll
+            <h3 id="odontologyTitle">Página web de Odontología con animaciones de scroll
               <br> (JavaScript vanilla):
             </h3>
-            <p>Para la página web de una clínica odontológica, creé una librería personalizada con JavaScript vanilla.
+            <p id="odontologyPg" class="paragraph">Para la página web de una clínica odontológica, creé una librería personalizada con JavaScript vanilla.
               Esta librería permite animaciones suaves al hacer scroll, mejorando la presentación y el atractivo
               visual del sitio. Cada componente responde de manera única al desplazamiento, ofreciendo una experiencia
               interactiva y agradable. </p>
@@ -286,12 +286,12 @@
         </div>
 
         <div class="mySlides fade ">
-          <img class="modalImg" src="assets/odontology.png">
+          <img class="modalImg" src="assets/odontology.png" id="portfolio">
           <div class="textContainer">
-            <h3>Sitio Web "Sonmyd"
+            <h3 id="portfolioTitle">Sitio Web "Sonmyd"
               <br> (HTML, CSS y JavaScript vanilla):
             </h3>
-            <p>Concebí y materialicé el sitio web 'Sonmyd' desde cero, utilizando HTML, CSS y JavaScript vanilla para
+            <p id="portfolioPg" class="paragraph">Concebí y materialicé el sitio web 'Sonmyd' desde cero, utilizando HTML, CSS y JavaScript vanilla para
               cada aspecto del desarrollo. Este proyecto representa mi habilidad para crear experiencias web
               completamente personalizadas, desde la estructura hasta la interactividad. Explore 'Sonmyd' para
               descubrir una combinación única de diseño visual y funcionalidades elaboradas a medida.</p>
@@ -315,8 +315,9 @@
 
     <div id="myModal" class="modal">
       <span class="close">&times;</span>
+      <h2 id="modalTitle" class="pt-50"></h2>
       <img class="modal-content" id="img01" />
-      <div id="caption"></div>
+      <p id="modalParagraph"></p>
     </div>
   </section>
 
