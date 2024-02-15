@@ -133,7 +133,7 @@ p {
   width: 100%;
   transition: 800ms ease all;
 }
-#header {
+body {
   /* background-image: url('assets/background_animated.gif'); */
   background-size: cover;
   background-repeat: no-repeat;
