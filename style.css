@@ -62,8 +62,8 @@ p {
   text-align: center;
   font-weight: 400;
 }
-.pt-50{
-padding-top: 40px;
+.pt-50 {
+  padding-top: 40px;
 }
 .dividerSkills {
   border-top: 1px solid white;
@@ -2185,13 +2185,21 @@ input:-webkit-autofill:active {
   h4 {
     white-space: nowrap;
   }
-  .sections{
+  #imgCode{
+width: 100px;
+  }
+  #satellite {
+    z-index: -20;
+    left: -100px;
+    bottom: 10px;
+  }
+  .sections {
     min-height: 80vh;
   }
-  #modalTitle{
+  #modalTitle {
     margin: 10px;
   }
-  #myModal{
+  #myModal {
     padding: 0 10px;
   }
   .paragraph {
