@@ -2165,6 +2165,9 @@ input:-webkit-autofill:active {
   #spaceAbout {
     display: none;
   }
+  .carousel{
+    display: none;
+  }
 }
 
 /*responsive mobile*/
