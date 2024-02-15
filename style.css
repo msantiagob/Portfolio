@@ -306,6 +306,7 @@ p {
   z-index: 100;
   top: 2200px;
   display: none;
+  width:350px
 }
 .textImportant {
   color: #00d8fe;
@@ -2185,8 +2186,17 @@ input:-webkit-autofill:active {
   h4 {
     white-space: nowrap;
   }
-  #imgCode{
-width: 100px;
+  .form-control,
+  textarea {
+    margin: 10px auto;
+  }
+  #imgCode {
+    width: 100px;
+    right: -21px;
+    top: 35px;
+  }
+  .send-button{
+    width: 300px;
   }
   #satellite {
     z-index: -20;
@@ -2216,7 +2226,8 @@ width: 100px;
     position: absolute;
   }
   #rocket {
-    margin-top: 450px;
+    margin-top: 200px;
+    width: 300px
   }
   #textAboutMe {
     margin: 20px;
