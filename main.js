@@ -15,15 +15,19 @@ if (widthWindow < 1025) {
       bgMenu.style.zIndex = '-10';
       bgMenu.style.opacity = '0';
       links.style.marginLeft = '100vw';
-      links.style.height = '0';
-    } else {
+      function height() {
+        if (links.style.marginLeft = '100vw') {
+          links.style.height = '0';
+        }
 
+      }
+      setTimeout(height, 5000);
+    } else {
       btnMenu.classList.add('activeMenu');
       bgMenu.style.zIndex = '200';
       bgMenu.style.opacity = '1';
       links.style.height = '100%';
       links.style.marginLeft = '20vw';
-
     }
   }
 }
@@ -255,7 +259,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
-  
 });
 
 function isElementVisible(element) {
@@ -273,4 +276,3 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
 function menuBtnFunction(menuBtn) {
   menuBtn.classList.toggle('activeMenu');
 }
-

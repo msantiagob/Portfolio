@@ -523,7 +523,7 @@ img {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
-.comets{
+.comets {
   width: 500px;
 }
 @-webkit-keyframes zoom {
@@ -2185,14 +2185,14 @@ input:-webkit-autofill:active {
   h4 {
     white-space: nowrap;
   }
-.comets{
-  width: 300px;
-}
-.cometsLeft{
-  top:5px
-}
+  .comets {
+    width: 300px;
+  }
+  .cometsLeft {
+    top: 5px;
+  }
   #rocket {
-    margin-top: 150px;
+    margin-top: 220px;
   }
   #textAboutMe {
     margin: 20px;
@@ -2399,6 +2399,76 @@ input:-webkit-autofill:active {
     display: none;
   }
 
+  .imageCarousel {
+    display: block;
+    width: 100%;
+  }
+
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .containerCarouselLeft {
+    display: flex;
+    width: 100%;
+    animation: bannermoveLeft 20s linear infinite;
+  }
+  .containerCarousel {
+    display: flex;
+    width: 100%;
+    animation: bannermove 20s linear infinite;
+  }
+  .containerCarousel.paused {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+
+  .w-carousel {
+    width: 100%;
+  }
+
+  .list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .imgdot {
+    width: 100%;
+  }
+  .imgSkills {
+    width: 80px;
+  }
+  @keyframes bannermove {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes bannermoveLeft {
+    0% {
+      transform: translateX(-60%);
+    }
+    50% {
+      transform: translateX(80%);
+    }
+    100% {
+      transform: translateX(-60%);
+    }
+  }
+  .dividerSkills{
+    width: 80vw;
+  }
+  .containerImagesSkills {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 340px) {
@@ -2407,5 +2477,3 @@ input:-webkit-autofill:active {
     text-align: center;
   }
 }
-
-
