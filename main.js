@@ -4,6 +4,7 @@ const widthWindow =
   window.innerWidth ||
   document.documentElement.clientWidth ||
   document.body.clientWidth;
+  
 if (widthWindow < 1025) {
   function watchLinks() {
     const bgMenu = document.getElementById('bgMenu');
