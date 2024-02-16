@@ -2,8 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
  <loc>http://www.sonmyd.com</loc>
- <lastmod>2013-01-01</lastmod>
- <changefreq>weekly</changefreq>
- <priority>1</priority>
 </url>
+  <link rel="canonical" href="https://portfolio-sonmyd.netlify.app/">
+
 </urlset>

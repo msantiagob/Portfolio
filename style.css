@@ -179,7 +179,9 @@ body {
   padding: 0 20px;
   z-index: 333;
 }
-
+.text-center {
+  text-align:center
+}
 .nav-item {
   color: #ffffff;
   padding: 20px;
