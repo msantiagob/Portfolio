@@ -280,3 +280,14 @@ function isElementVisible(element) {
 function menuBtnFunction(menuBtn) {
   menuBtn.classList.toggle('activeMenu');
 }
+
+function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+
+  if (section) {
+      // Usa el método scrollIntoView para animar el desplazamiento
+      section.scrollIntoView({
+          behavior: 'smooth'
+      });
+  }
+}
