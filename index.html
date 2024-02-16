@@ -7,9 +7,9 @@
   <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
   <meta name="description"
-    content="Descubre el mundo de la transformación digital con SONMYD, tu socio confiable en el desarrollo de aplicaciones nativas y web. Como desarrollador full stack con tres años de experiencia, estoy listo para llevar tus ideas al siguiente nivel.">
+    content="Descubre el mundo de la transformación digital con SONMYD, tu socio confiable en el desarrollo de aplicaciones nativas con react native y web. Como desarrollador full stack javascript.">
   <meta name="keywords"
-    content="desarrollador full stack, aplicaciones nativas, aplicaciones web, transformación digital, proyectos digitales">
+    content="desarrollador full stack, aplicaciones nativas, aplicaciones web, react, proyectos digitales, javascript">
   <meta name="author" content="Santiago Bedoya">
   <meta name="copyright" content="SONMYD" />
   <meta name="robots" content="index">
@@ -28,7 +28,7 @@
 </head>
 
 <body>
-  <div id="containerNav">
+  <nav id="containerNav">
     <div id="menuMobile">
       <a href="#hero" id="containerLogo">
         <img src="assets/icon.png" alt="Logo SONMYD" loading="lazy" title="Logo SONMYD" id="logo" />
@@ -42,7 +42,7 @@
         </div>
       </a>
     </div>
-    <nav class="nav" id="myLinks">
+    <section class="nav" id="myLinks">
       <a href="#hero" class="nav-item is-active" active-color="#e8092d" data-section-id="hero"
         onclick="watchLinks()">Inicio</a>
       <a href="#aboutMe" class="nav-item" active-color="#e8092d" data-section-id="aboutMe" onclick="watchLinks()">Acerca
@@ -55,10 +55,10 @@
         <a href="#contact" class="nav-item-contact" data-section-id="contact" onclick="watchLinks()">Contáctame</a>
       </div>
       <span class="nav-indicator"></span>
-    </nav>
-  </div>
+    </section>
+  </nav>
   <div id="bgMenu"></div>
-  <div id="hero">
+  <header id="hero">
     <div id="txtContainerHero">
       <div class="fade">
         <h4>EL NEGOCIO DEL MAÑANA</h4>
@@ -76,276 +76,278 @@
       </video>
     </div>
 
-  </div>
-  <section class="sections" id="aboutMe">
-    <img id="rocket" src="assets/rocket.gif" alt="" />
-    <div id="containerAboutMe">
-      <img src="assets/santiago_bedoya.png" alt="" width="200px" />
-      <h2>Hola, soy Santiago. <br id="spaceAbout"> Un gusto conocerte.</h2>
-      <p id="textAboutMe">
-        Desde que comencé mi viaje como programador full stack, he trabajado
-        de forma remota para diversas empresas, colaborado con personas
-        talentosas en la creación de productos digitales. Disfruto enseñando y
-        compartiendo mi pasión por el desarrollo. Soy alguien seguro en mis
-        habilidades, naturalmente curioso y estoy constantemente enfocado en
-        mejorar mis capacidades, abordando cada problema de desarrollo uno a
-        la vez. <br />
-        <br />
-        <span class="textImportant">
-          ¿Interesado en aprender juntos o en crear un proyecto?
-        </span>
-      </p>
-      <button onclick="scrollToSection('contact')" class="custom-btn btn-5">Contáctame</button>
-    </div>
-    <!-- <img src="assets/astronaut.gif" alt="" width="100" /> -->
+  </header>
+  <main>
+    <section class="sections" id="aboutMe">
+      <img id="rocket" src="assets/rocket.gif" alt="" />
+      <article id="containerAboutMe">
+        <img src="assets/santiago_bedoya.png" alt="" width="200px" />
+        <h2>Hola, soy Santiago. <br id="spaceAbout"> Un gusto conocerte.</h2>
+        <p id="textAboutMe">
+          Desde que comencé mi viaje como programador full stack, he trabajado
+          de forma remota para diversas empresas, colaborado con personas
+          talentosas en la creación de productos digitales. Disfruto enseñando y
+          compartiendo mi pasión por el desarrollo. Soy alguien seguro en mis
+          habilidades, naturalmente curioso y estoy constantemente enfocado en
+          mejorar mis capacidades, abordando cada problema de desarrollo uno a
+          la vez. <br />
+          <br />
+          <span class="textImportant">
+            ¿Interesado en aprender juntos o en crear un proyecto?
+          </span>
+        </p>
+        <button onclick="scrollToSection('contact')" class="custom-btn btn-5">Contáctame</button>
+      </article>
+      <!-- <img src="assets/astronaut.gif" alt="" width="100" /> -->
 
-  </section>
-  <section class="sections" id="skills">
-    <h2 class="subTitle">Habilidades</h2>
-    <div id="containerSkills">
-      <div class="containersSkills">
-        <img id="comet1" class="cometsLeft comets" src="assets/giphy.gif" alt="">
-        <h3>Frontend Developer</h3>
-        <hr id="dividerOne" class="dividerSkills" />
-        <section class="carousel">
-          <article class="containerCarousel">
-            <div class="w-carousel">
-              <ul class="list">
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/html.png" alt="" />
-                </li>
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/css.png" alt="" />
-                </li>
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/javascript.png" alt="" />
-                </li>
-              </ul>
-            </div>
-            <div class="w-carousel">
-              <ul class="list">
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/react.png" alt="" />
-                </li>
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/native.png" alt="" />
-                </li>
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/redux.png" alt="" />
-                </li>
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/tailwind.png" alt="" />
-                </li>
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/wordpress.png" alt="" />
-                </li>
-              </ul>
-            </div>
-          </article>
-        </section>
-        <div class="containerImagesSkills">
-          <img class="imgSkills SA1 CA1" src="assets/html.png" alt="" />
-          <img class="imgSkills SA2 CA1" src="assets/css.png" alt="" />
-          <img class="imgSkills SA3 CA1" src="assets/javascript.png" alt="" />
-          <img class="imgSkills SA4 CA1" src="assets/react.png" alt="" />
-          <img class="imgSkills SA5 CA1" src="assets/native.png" alt="" />
-          <img class="imgSkills SA6 CA1" src="assets/redux.png" alt="" />
-          <img class="imgSkills SA7 CA1" src="assets/tailwind.png" alt="" />
-          <img class="imgSkills SA8 CA1" src="assets/wordpress.png" alt="" />
+    </section>
+    <section class="sections" id="skills">
+      <h2 class="subTitle">Habilidades</h2>
+      <article id="containerSkills">
+        <div class="containersSkills">
+          <img id="comet1" class="cometsLeft comets" src="assets/giphy.gif" alt="">
+          <h3>Frontend Developer</h3>
+          <hr id="dividerOne" class="dividerSkills" />
+          <section class="carousel">
+            <article class="containerCarousel">
+              <div class="w-carousel">
+                <ul class="list">
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/html.png" alt="" />
+                  </li>
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/css.png" alt="" />
+                  </li>
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/javascript.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+              <div class="w-carousel">
+                <ul class="list">
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/react.png" alt="" />
+                  </li>
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/native.png" alt="" />
+                  </li>
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/redux.png" alt="" />
+                  </li>
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/tailwind.png" alt="" />
+                  </li>
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/wordpress.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </section>
+          <div class="containerImagesSkills">
+            <img class="imgSkills SA1 CA1" src="assets/html.png" alt="" />
+            <img class="imgSkills SA2 CA1" src="assets/css.png" alt="" />
+            <img class="imgSkills SA3 CA1" src="assets/javascript.png" alt="" />
+            <img class="imgSkills SA4 CA1" src="assets/react.png" alt="" />
+            <img class="imgSkills SA5 CA1" src="assets/native.png" alt="" />
+            <img class="imgSkills SA6 CA1" src="assets/redux.png" alt="" />
+            <img class="imgSkills SA7 CA1" src="assets/tailwind.png" alt="" />
+            <img class="imgSkills SA8 CA1" src="assets/wordpress.png" alt="" />
+          </div>
         </div>
+        <div class="containersSkills">
+          <img id="comet2" class="cometsRight comets" src="assets/giphy.gif" alt="">
+          <h3>Backend Developer</h3>
+          <hr id="dividerTwo" class="dividerSkills" />
+          <section class="carousel">
+            <article class="containerCarouselLeft">
+              <div class="w-carousel">
+                <ul class="list">
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/node.png" alt="" />
+                  </li>
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/rails.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+              <div class="w-carousel">
+                <ul class="list">
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/mongo.png" alt="" />
+                  </li>
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/postgresql.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </section>
+          <div class="containerImagesSkills">
+
+            <img class="imgSkills SA3 CA2" src="assets/node.png" alt="" />
+            <img class="imgSkills SA4 CA2" src="assets/rails.png" alt="" />
+            <img class="imgSkills SA5 CA2" src="assets/mongo.png" alt="" />
+            <img class="imgSkills SA6 CA2" src="assets/postgresql.png" alt="" />
+          </div>
+        </div>
+        <div class="containersSkills">
+          <img id="comet3" class="cometsLeft comets" src="assets/giphy.gif" alt="">
+          <h3>Mentor</h3>
+          <hr id="dividerThree" class="dividerSkills" />
+          <section class="carousel">
+            <article class="containerCarousel">
+              <div class="w-carousel">
+                <ul class="list">
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/github.png" alt="" />
+                  </li>
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/git.png" alt="" />
+                  </li>
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/figma.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+              <div class="w-carousel">
+                <ul class="list">
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/scrum.png" alt="" />
+                  </li>
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/canva.png" alt="" />
+                  </li>
+                  <li class="imgdot">
+                    <img class="imgSkills SA1 CA1" src="assets/chatgpt.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </section>
+          <div class="containerImagesSkills">
+            <img class="imgSkills SA7 CA3 " src="assets/github.png" alt="" />
+            <img class="imgSkills SA6 CA3 " src="assets/git.png" alt="" />
+            <img class="imgSkills SA5 CA3 " src="assets/figma.png" alt="" />
+            <img class="imgSkills SA4 CA3 " src="assets/scrum.png" alt="" />
+            <img class="imgSkills SA3 CA3 " src="assets/canva.png" alt="" />
+            <img class="imgSkills SA2 CA3 " src="assets/chatgpt.png" alt="" />
+          </div>
+        </div>
+      </article>
       </div>
-      <div class="containersSkills">
-        <img id="comet2" class="cometsRight comets" src="assets/giphy.gif" alt="">
-        <h3>Backend Developer</h3>
-        <hr id="dividerTwo" class="dividerSkills" />
-        <section class="carousel">
-          <article class="containerCarouselLeft">
-            <div class="w-carousel">
-              <ul class="list">
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/node.png" alt="" />
-                </li>
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/rails.png" alt="" />
-                </li>
-              </ul>
-            </div>
-            <div class="w-carousel">
-              <ul class="list">
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/mongo.png" alt="" />
-                </li>
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/postgresql.png" alt="" />
-                </li>
-              </ul>
-            </div>
-          </article>
-        </section>
-        <div class="containerImagesSkills">
 
-          <img class="imgSkills SA3 CA2" src="assets/node.png" alt="" />
-          <img class="imgSkills SA4 CA2" src="assets/rails.png" alt="" />
-          <img class="imgSkills SA5 CA2" src="assets/mongo.png" alt="" />
-          <img class="imgSkills SA6 CA2" src="assets/postgresql.png" alt="" />
+    </section>
+    <section class="sections" id="portfolio">
+      <h2>Portafolio</h2>
+      <div class="slideshow-container">
+        <div class="sliderContainer">
+          <div class="mySlides fade ">
+            <img class="modalImg" src="assets/puntacana.png"
+              title="Punta Cana Transfer - Captura de Pantalla del Diseño"
+              alt="Captura de pantalla que muestra el diseño interactivo de la plataforma Punta Cana Transfer, desarrollada con React y Ruby on Rails."
+              id="puntacana">
+            <div class="textContainer">
+              <h3 id="puntacanaTitle">Punta Cana Transfer
+                <br>(React y Ruby on Rails):
+              </h3>
+              <p id="puntacanaPg" class="paragraph">Colaboré en el desarrollo de la plataforma Punta Cana Transfer
+                utilizando React para la interfaz de
+                usuario y Ruby on Rails para la lógica del servidor. Implementamos funcionalidades avanzadas como la
+                reordenación de elementos con la librería react-beautiful-dnd, logrando una experiencia de usuario
+                fluida y atractiva. </p>
+              <a class="textImportant" href="">Ver Web</a>
+            </div>
+          </div>
+
+          <div class="mySlides fade ">
+            <img class="modalImg" src="assets/insurance.png"
+              title="Sitio de Seguros (No code y personalización con CSS y JavaScript vanilla):"
+              alt="Vista previa de la página de seguros con personalización mediante CSS y JavaScript vanilla, creado utilizando una solución no code."
+              id="insurance">
+            <div class="textContainer">
+              <h3 id="insuranceTitle">Sitio de Seguros
+                <br>(No code y personalización <br>
+                con CSS y JavaScript vanilla):
+              </h3>
+              <p id="insurancePg" class="paragraph">Diseñe y cree un sitio web para servicios de seguros mediante una
+                solución no code alternativa a
+                WordPress. Luego, personalicé la apariencia y el comportamiento utilizando CSS y JavaScript vanilla,
+                asegurando una presentación única y funcionalidades específicas para las necesidades del cliente.</p>
+              <a class="textImportant" href="">Ver Web</a>
+            </div>
+          </div>
+
+          <div class="mySlides fade ">
+            <img class="modalImg" src="assets/movies.png" id="movies">
+            <div class="textContainer">
+              <h3 id="moviesTitle">Proyecto React con autenticación <br> y API de películas:
+              </h3>
+              <p id="moviesPg" class="paragraph">Desarrollé mi primer proyecto en React, incorporando funciones de
+                autenticación para los usuarios y
+                conectándome a una API de películas para mostrar información actualizada. Esta experiencia fortaleció mi
+                comprensión de la construcción de aplicaciones React dinámicas y conectadas a servicios externos.</p>
+              <a class="textImportant" href="">Ver Web</a>
+            </div>
+          </div>
+
+          <div class="mySlides fade ">
+            <img class="modalImg" src="assets/odontology.png" id="odontology">
+            <div class="textContainer">
+              <h3 id="odontologyTitle">Página web de Odontología con animaciones de scroll
+                <br> (JavaScript vanilla):
+              </h3>
+              <p id="odontologyPg" class="paragraph">Para la página web de una clínica odontológica, creé una librería
+                personalizada con JavaScript vanilla.
+                Esta librería permite animaciones suaves al hacer scroll, mejorando la presentación y el atractivo
+                visual del sitio. Cada componente responde de manera única al desplazamiento, ofreciendo una experiencia
+                interactiva y agradable. </p>
+              <a class="textImportant" href="">Ver Web</a>
+            </div>
+          </div>
+
+          <div class="mySlides fade ">
+            <img class="modalImg" src="assets/odontology.png" id="portfolio">
+            <div class="textContainer">
+              <h3 id="portfolioTitle">Sitio Web "Sonmyd"
+                <br> (HTML, CSS y JavaScript vanilla):
+              </h3>
+              <p id="portfolioPg" class="paragraph">Concebí y materialicé el sitio web 'Sonmyd' desde cero, utilizando
+                HTML, CSS y JavaScript vanilla para
+                cada aspecto del desarrollo. Este proyecto representa mi habilidad para crear experiencias web
+                completamente personalizadas, desde la estructura hasta la interactividad. Explore 'Sonmyd' para
+                descubrir una combinación única de diseño visual y funcionalidades elaboradas a medida.</p>
+              <a class="textImportant" href="">Ver Web</a>
+            </div>
+
+          </div>
         </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
       </div>
-      <div class="containersSkills">
-        <img id="comet3" class="cometsLeft comets" src="assets/giphy.gif" alt="">
-        <h3>Mentor</h3>
-        <hr id="dividerThree" class="dividerSkills" />
-        <section class="carousel">
-          <article class="containerCarousel">
-            <div class="w-carousel">
-              <ul class="list">
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/github.png" alt="" />
-                </li>
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/git.png" alt="" />
-                </li>
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/figma.png" alt="" />
-                </li>
-              </ul>
-            </div>
-            <div class="w-carousel">
-              <ul class="list">
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/scrum.png" alt="" />
-                </li>
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/canva.png" alt="" />
-                </li>
-                <li class="imgdot">
-                  <img class="imgSkills SA1 CA1" src="assets/chatgpt.png" alt="" />
-                </li>
-              </ul>
-            </div>
-          </article>
-        </section>
-        <div class="containerImagesSkills">
-          <img class="imgSkills SA7 CA3 " src="assets/github.png" alt="" />
-          <img class="imgSkills SA6 CA3 " src="assets/git.png" alt="" />
-          <img class="imgSkills SA5 CA3 " src="assets/figma.png" alt="" />
-          <img class="imgSkills SA4 CA3 " src="assets/scrum.png" alt="" />
-          <img class="imgSkills SA3 CA3 " src="assets/canva.png" alt="" />
-          <img class="imgSkills SA2 CA3 " src="assets/chatgpt.png" alt="" />
-        </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
       </div>
-    </div>
-    </div>
 
-  </section>
-  <section class="sections" id="portfolio">
-    <h2>Portafolio</h2>
-    <div class="slideshow-container">
-      <div class="sliderContainer">
-        <div class="mySlides fade ">
-          <img class="modalImg" src="assets/puntacana.png" title="Punta Cana Transfer - Captura de Pantalla del Diseño"
-            alt="Captura de pantalla que muestra el diseño interactivo de la plataforma Punta Cana Transfer, desarrollada con React y Ruby on Rails."
-            id="puntacana">
-          <div class="textContainer">
-            <h3 id="puntacanaTitle">Punta Cana Transfer
-              <br>(React y Ruby on Rails):
-            </h3>
-            <p id="puntacanaPg" class="paragraph">Colaboré en el desarrollo de la plataforma Punta Cana Transfer
-              utilizando React para la interfaz de
-              usuario y Ruby on Rails para la lógica del servidor. Implementamos funcionalidades avanzadas como la
-              reordenación de elementos con la librería react-beautiful-dnd, logrando una experiencia de usuario
-              fluida y atractiva. </p>
-            <a class="textImportant" href="">Ver Web</a>
-          </div>
-        </div>
-
-        <div class="mySlides fade ">
-          <img class="modalImg" src="assets/insurance.png"
-            title="Sitio de Seguros (No code y personalización con CSS y JavaScript vanilla):"
-            alt="Vista previa de la página de seguros con personalización mediante CSS y JavaScript vanilla, creado utilizando una solución no code."
-            id="insurance">
-          <div class="textContainer">
-            <h3 id="insuranceTitle">Sitio de Seguros
-              <br>(No code y personalización <br>
-              con CSS y JavaScript vanilla):
-            </h3>
-            <p id="insurancePg" class="paragraph">Diseñe y cree un sitio web para servicios de seguros mediante una
-              solución no code alternativa a
-              WordPress. Luego, personalicé la apariencia y el comportamiento utilizando CSS y JavaScript vanilla,
-              asegurando una presentación única y funcionalidades específicas para las necesidades del cliente.</p>
-            <a class="textImportant" href="">Ver Web</a>
-          </div>
-        </div>
-
-        <div class="mySlides fade ">
-          <img class="modalImg" src="assets/movies.png" id="movies">
-          <div class="textContainer">
-            <h3 id="moviesTitle">Proyecto React con autenticación <br> y API de películas:
-            </h3>
-            <p id="moviesPg" class="paragraph">Desarrollé mi primer proyecto en React, incorporando funciones de
-              autenticación para los usuarios y
-              conectándome a una API de películas para mostrar información actualizada. Esta experiencia fortaleció mi
-              comprensión de la construcción de aplicaciones React dinámicas y conectadas a servicios externos.</p>
-            <a class="textImportant" href="">Ver Web</a>
-          </div>
-        </div>
-
-        <div class="mySlides fade ">
-          <img class="modalImg" src="assets/odontology.png" id="odontology">
-          <div class="textContainer">
-            <h3 id="odontologyTitle">Página web de Odontología con animaciones de scroll
-              <br> (JavaScript vanilla):
-            </h3>
-            <p id="odontologyPg" class="paragraph">Para la página web de una clínica odontológica, creé una librería
-              personalizada con JavaScript vanilla.
-              Esta librería permite animaciones suaves al hacer scroll, mejorando la presentación y el atractivo
-              visual del sitio. Cada componente responde de manera única al desplazamiento, ofreciendo una experiencia
-              interactiva y agradable. </p>
-            <a class="textImportant" href="">Ver Web</a>
-          </div>
-        </div>
-
-        <div class="mySlides fade ">
-          <img class="modalImg" src="assets/odontology.png" id="portfolio">
-          <div class="textContainer">
-            <h3 id="portfolioTitle">Sitio Web "Sonmyd"
-              <br> (HTML, CSS y JavaScript vanilla):
-            </h3>
-            <p id="portfolioPg" class="paragraph">Concebí y materialicé el sitio web 'Sonmyd' desde cero, utilizando
-              HTML, CSS y JavaScript vanilla para
-              cada aspecto del desarrollo. Este proyecto representa mi habilidad para crear experiencias web
-              completamente personalizadas, desde la estructura hasta la interactividad. Explore 'Sonmyd' para
-              descubrir una combinación única de diseño visual y funcionalidades elaboradas a medida.</p>
-            <a class="textImportant" href="">Ver Web</a>
-          </div>
-
-        </div>
-      </div>
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-
-    </div>
-    <br>
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-    </div>
-
-    <div id="myModal" class="modal">
-      <span class="close">&times;</span>
-      <h2 id="modalTitle" class="pt-50"></h2>
-      <img class="modal-content" id="img01" />
-      <p id="modalParagraph"></p>
-    </div>
-  </section>
-
-  <section class="sections" id="contact">
+      <aside id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle" class="pt-50"></h2>
+        <img class="modal-content" id="img01" />
+        <p id="modalParagraph"></p>
+      </aside>
+    </section>
+  </main>
+  <footer class="sections" id="contact">
     <h2 class="section-header">Contactame</h2>
     <div class="contact-wrapper">
       <!-- Left contact page -->
-      <form id="contact-form"  class="form-horizontal" netlify role="form">
+      <form id="contact-form" class="form-horizontal" netlify role="form">
         <div class="form-group">
           <div class="col-sm-12">
             <input type="text" class="form-control" id="name" placeholder="NOMBRE" name="name" value="" required>
@@ -357,32 +359,37 @@
           </div>
         </div>
         <textarea class="form-control" rows="10" placeholder="MENSAJE" name="message" required></textarea>
-        <button class="custom-btn btn-5 send-button" id="submit" type="submit" value="SEND" >
+        <button class="custom-btn btn-5 send-button" id="submit" type="submit" value="SEND">
           <span class="send-text">Enviar</span>
         </button>
       </form>
       <!-- Right contact page -->
       <div class="direct-contact-container">
         <ul class="contact-list">
-          <li class="list-item"><i class="fa fa-map-marker fa-1x"><span class="contact-text place">Medellin,Colombia</span></i></li>
+          <li class="list-item"><i class="fa fa-map-marker fa-1x"><span
+                class="contact-text place">Medellin,Colombia</span></i></li>
           <li class="list-item"><i class="fa fa-phone fa-1x"><span class="contact-text phone"><a
                   href="tel:+57 3053159135" title="Give me a call">+57 3053159135</a></span></i></li>
-          <li class="list-item"><i class="fa fa-envelope fa-1x"><span class="contact-text gmail"><a href="mailto:info.sonmyd@gmail.com"
-                  title="Send me an email">info.sonmyd@gmail.com</a></span></i></li>
+          <li class="list-item"><i class="fa fa-envelope fa-1x"><span class="contact-text gmail"><a
+                  href="mailto:info.sonmyd@gmail.com" title="Send me an email">info.sonmyd@gmail.com</a></span></i></li>
         </ul>
         <hr class="dividerContact">
         <ul class="social-media-list">
 
-          <li onclick="window.open('https://github.com/sonmyd/', '_blank')" ><a href="https://github.com/sonmyd/" target="_blank" class="contact-icon">
+          <li onclick="window.open('https://github.com/sonmyd/', '_blank')"><a href="https://github.com/sonmyd/"
+              target="_blank" class="contact-icon">
               <i class="fa fa-github" aria-hidden="true"></i></a>
           </li>
-          <li onclick="window.open('https://www.linkedin.com/in/santiago-bedoya-b2371a1b0/', '_blank')"><a href="https://www.linkedin.com/in/santiago-bedoya-b2371a1b0/" target="_blank" class="contact-icon">
+          <li onclick="window.open('https://www.linkedin.com/in/santiago-bedoya-b2371a1b0/', '_blank')"><a
+              href="https://www.linkedin.com/in/santiago-bedoya-b2371a1b0/" target="_blank" class="contact-icon">
               <i class="fa fa-linkedin" aria-hidden="true"></i></a>
           </li>
-          <li onclick="window.open('https://www.youtube.com/@sonmyd', '_blank')"><a href="https://www.youtube.com/@sonmyd" target="_blank" class="contact-icon">
+          <li onclick="window.open('https://www.youtube.com/@sonmyd', '_blank')"><a
+              href="https://www.youtube.com/@sonmyd" target="_blank" class="contact-icon">
               <i class="fa fa-youtube" aria-hidden="true"></i></a>
           </li>
-          <li onclick="window.open('https://www.instagram.com/sonmydcode', '_blank')"><a href="https://www.instagram.com/sonmydcode" target="_blank" class="contact-icon">
+          <li onclick="window.open('https://www.instagram.com/sonmydcode', '_blank')"><a
+              href="https://www.instagram.com/sonmydcode" target="_blank" class="contact-icon">
               <i class="fa fa-instagram" aria-hidden="true"></i></a>
           </li>
         </ul>
@@ -396,7 +403,7 @@
       <source src="assets/satellite.mp4" type="video/mp4">
       Tu navegador no soporta la etiqueta de video.
     </video>
-  </section>
+  </footer>
 
   <div class="bg-animation">
     <div id="stars"></div>
