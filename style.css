@@ -2162,6 +2162,11 @@ input:-webkit-autofill:active {
     display: none;
     visibility: hidden;
   }
+  #modalTitle {
+    display: none;
+  }
+  #modalParagraph {
+    display: none;
 }
 
 /*responsive mobile*/
