@@ -305,10 +305,10 @@ body {
 
 #rocket {
   position: absolute;
-  z-index: 100;
+  z-index: -1;
   top: 2200px;
   display: none;
-  width: 350px;
+  width: 200px;
 }
 .textImportant {
   color: #00d8fe;
@@ -2235,7 +2235,7 @@ input:-webkit-autofill:active {
   }
   #rocket {
     margin-top: 200px;
-    width: 300px;
+    width: 150px;
   }
   #textAboutMe {
     margin: 20px;
