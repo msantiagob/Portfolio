@@ -306,9 +306,14 @@ p {
 #astronauts {
   width: 100%;
 }
-#imageContainerHero,
+#imageContainerHero{
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #txtContainerHero {
-  width: 50vw;
+  width: 55vw;
   display: flex;
   justify-content: center;
   align-items: center;
