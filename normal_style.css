@@ -306,11 +306,11 @@ p {
 #astronauts {
   width: 100%;
 }
-#imageContainerHero{
-    width: 45vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#imageContainerHero {
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #txtContainerHero {
   width: 55vw;
@@ -1454,6 +1454,15 @@ input:-webkit-autofill:hover {
 @media screen and (min-width: 1910px) {
   html {
     font-size: 25px;
+  }
+  h1 {
+    font-size: 4.3rem;
+  }
+  #textContainerHero {
+    width: 80vw;
+  }
+  #imageContainerHero{
+    width: 55vw;
   }
   #containerAboutMe {
     margin-top: -400px;
