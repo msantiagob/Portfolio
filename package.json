@@ -1,0 +1,31 @@
+{
+  "name": "sonmyd_portfolio",
+  "version": "1.0.0",
+  "description": "Descubre el mundo de la transformación digital con SONMYD, desarrollo de aplicaciones nativas con react native y web. Como desarrollador full stack javascript",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonmyd/Portfolio.git"
+  },
+  "keywords": [
+    "desarrollador",
+    "full",
+    "stack",
+    "aplicaciones",
+    "nativas",
+    "aplicaciones",
+    "web",
+    "react",
+    "digitales",
+    "javascript"
+  ],
+  "author": "Santiago Bedoya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sonmyd/Portfolio/issues"
+  },
+  "homepage": "https://github.com/sonmyd/Portfolio#readme"
+}
