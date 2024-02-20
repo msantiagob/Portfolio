@@ -98,10 +98,21 @@
       <!-- <img loading="lazy"  id="astronauts" src="assets/astronauts.gif"
           alt="Descubre la maravilla del espacio en este GIF animado, donde dos intrépidos astronautas flotan con gracia mientras orbitan alrededor de un planeta vivo y vibrante. Este cautivador contenido visual te sumergirá en una experiencia cósmica única. ¡Explora la exploración espacial, la ingravidez y la belleza de los astros en este impresionante GIF animado de astronautas y planetas en órbita!"
           title="Astronauts" /> -->
-      <video id="astronauts" autoplay loop muted>
-        <source src="assets/astronauts.mp4" type="video/mp4">
-        Tu navegador no soporta la etiqueta de video.
-      </video>
+      <div id="loadingImage">
+        <picture>
+          <source srcset="assets/astronauts.webp" type="image/webp">
+          <img class="w-full" loading="lazy" src="assets/astronauts.web" alt="Cargando..."
+            alt="Descubre la maravilla del espacio en este GIF animado, donde dos intrépidos astronautas flotan con gracia mientras orbitan alrededor de un planeta vivo y vibrante. Este cautivador contenido visual te sumergirá en una experiencia cósmica única. ¡Explora la exploración espacial, la ingravidez y la belleza de los astros en este impresionante GIF animado de astronautas y planetas en órbita!"
+            title="Astronauts">
+        </picture>
+      </div>
+
+      <div id="videoContainer">
+        <video id="astronauts" autoplay loop muted>
+          <source src="assets/astronauts.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
     </div>
 
   </header>
@@ -276,7 +287,7 @@
       <div class="slideshow-container">
         <div class="sliderContainer">
           <div class="mySlides fade ">
-            <img  class="modalImg" src="assets/puntacana.webp"
+            <img class="modalImg" src="assets/puntacana.webp"
               title="Punta Cana Transfer - Captura de Pantalla del Diseño"
               alt="Captura de pantalla que muestra el diseño interactivo de la plataforma Punta Cana Transfer, desarrollada con React y Ruby on Rails."
               id="puntacana">
@@ -294,7 +305,7 @@
           </div>
 
           <div class="mySlides fade ">
-            <img  class="modalImg" src="assets/insurance.webp"
+            <img class="modalImg" src="assets/insurance.webp"
               title="Sitio de Seguros (No code y personalización con CSS y JavaScript vanilla):"
               alt="Vista previa de la página de seguros con personalización mediante CSS y JavaScript vanilla, creado utilizando una solución no code."
               id="insurance">
@@ -312,7 +323,7 @@
           </div>
 
           <div class="mySlides fade ">
-            <img  class="modalImg" src="assets/movies.webp" id="movies">
+            <img class="modalImg" src="assets/movies.webp" id="movies">
             <div class="textContainer">
               <h3 id="moviesTitle">Proyecto React con autenticación <br> y API de películas:
               </h3>
@@ -325,7 +336,7 @@
           </div>
 
           <div class="mySlides fade ">
-            <img  class="modalImg" src="assets/odontology.webp" id="odontology">
+            <img class="modalImg" src="assets/odontology.webp" id="odontology">
             <div class="textContainer">
               <h3 id="odontologyTitle">Página web de Odontología con animaciones de scroll
                 <br> (JavaScript vanilla):
@@ -340,7 +351,7 @@
           </div>
 
           <div class="mySlides fade ">
-            <img  class="modalImg" src="assets/odontology.webp" id="portfolio">
+            <img class="modalImg" src="assets/odontology.webp" id="portfolio">
             <div class="textContainer">
               <h3 id="portfolioTitle">Sitio Web "Sonmyd"
                 <br> (HTML, CSS y JavaScript vanilla):
