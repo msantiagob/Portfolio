@@ -1,7 +1,13 @@
 .custom-btn,
+.nav-item,
+.nav-item-contact,
 body {
   color: #fff;
   font-family: Oswald, Montserrat, sans-serif;
+}
+.nav,
+.nav-item {
+  z-index: 333;
 }
 #photography {
   width: 200px;
@@ -11,14 +17,23 @@ body {
   width: 100vw;
   display: flex;
 }
+#stars,
+#stars4,
+#stars4:after,
+#stars:after {
+  width: 1px;
+  height: 1px;
+  background: 0 0;
+}
 #skills,
-.nav {
+.modal,
+.nav,
+.send-button {
   overflow: hidden;
 }
 .custom-btn,
 .nav-item {
   transition: 0.3s;
-  position: relative;
 }
 .containersSkills,
 .custom-btn,
@@ -52,6 +67,7 @@ body {
   content: ' ';
   top: 2000px;
 }
+.textContainer p,
 html {
   font-size: 16px;
 }
@@ -216,7 +232,6 @@ p {
   display: inline-flex;
   max-width: 100%;
   padding: 0 20px;
-  z-index: 333;
 }
 #btnContact,
 #hero,
@@ -225,15 +240,10 @@ p {
 }
 .nav-item,
 .nav-item-contact {
-  color: #fff;
   padding: 20px;
   margin: 0 6px;
-  font-family: Oswald, Montserrat, sans-serif;
   font-weight: 500;
   text-decoration: none;
-}
-.nav-item {
-  z-index: 333;
 }
 .nav-item:not(.is-active):hover:before {
   opacity: 1;
@@ -256,10 +266,6 @@ p {
     overflow: auto;
   }
 }
-.modal,
-.send-button {
-  overflow: hidden;
-}
 #btnContact {
   background-color: #e8092d;
   border-radius: 10px;
@@ -275,9 +281,20 @@ p {
   z-index: 1;
   position: relative;
 }
+#satellite {
+  z-index: -1;
+}
+#imgCode,
 #rocket,
+#satellite,
+#stars2:after,
+#stars3:after,
+#stars4:after,
+#stars:after,
+.close,
 .cometsLeft,
 .cometsRight,
+.full-wh,
 .next,
 .prev {
   position: absolute;
@@ -462,16 +479,6 @@ img {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
 }
-#imgCode,
-#satellite,
-#stars2:after,
-#stars3:after,
-#stars4:after,
-#stars:after,
-.close,
-.full-wh {
-  position: absolute;
-}
 .modal-content {
   margin: auto;
   display: block;
@@ -526,9 +533,6 @@ img {
 }
 .textContainer {
   margin-top: -70px;
-}
-.textContainer p {
-  font-size: 16px;
 }
 #textAboutMe {
   padding: 0 120px;
@@ -927,9 +931,6 @@ img {
 }
 #stars4,
 #stars4:after {
-  width: 1px;
-  height: 1px;
-  background: 0 0;
   box-shadow: 233px 1976px #c49952, 1196px 1119px #c49952, 646px 740px #c49952,
     335px 645px #c49952, 1119px 1452px #c49952, 176px 1870px #c49952,
     639px 1711px #c49952, 647px 1388px #c49952, 1516px 1108px #c49952,
@@ -1156,7 +1157,7 @@ textarea.form-control {
 .form-control,
 textarea {
   max-width: 400px;
-  background-color: #000;
+  background-color: #000000b3;
   color: #fff;
   letter-spacing: 1px;
 }
@@ -1365,18 +1366,10 @@ textarea {
   width: 100vw;
 }
 #stars {
-  width: 1px;
-  height: 1px;
-  background: 0 0;
   -webkit-animation: 50s linear infinite animStar;
   -moz-animation: 50s linear infinite animStar;
   -ms-animation: animStar 50s linear infinite;
   animation: 50s linear infinite animStar;
-}
-#stars:after {
-  width: 1px;
-  height: 1px;
-  background: 0 0;
 }
 #stars2 {
   background: 0 0;
@@ -1385,7 +1378,8 @@ textarea {
   -ms-animation: animStar 100s linear infinite;
   animation: 100s linear infinite animStar;
 }
-#stars2:after {
+#stars2:after,
+#stars3:after {
   background: 0 0;
 }
 #stars3 {
@@ -1394,9 +1388,6 @@ textarea {
   -moz-animation: 150s linear infinite animStar;
   -ms-animation: animStar 150s linear infinite;
   animation: 150s linear infinite animStar;
-}
-#stars3:after {
-  background: 0 0;
 }
 #stars4 {
   -webkit-animation: 600s linear infinite animStar;
