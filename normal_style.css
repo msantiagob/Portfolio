@@ -287,8 +287,7 @@ p {
   padding-inline: 1%;
 }
 #astronauts {
-  width: 700px;
-  height: 700px;
+  width: 100%;
 }
 #imageContainerHero,
 #txtContainerHero {
