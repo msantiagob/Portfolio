@@ -55,7 +55,11 @@
   <nav id="containerNav">
     <div id="menuMobile">
       <a href="#hero" id="containerLogo">
-        <img loading="lazy"  src="assets/icon.png" alt="Logo SONMYD"  title="Logo SONMYD" id="logo" />
+        <picture>
+          <source srcset="assets/icon.webp" type="image/webp" >
+          <img loading="lazy" src="assets/icon.png" alt="Logo SONMYD" title="Logo SONMYD" id="logo" />
+        </picture>
+
         <span id="txtLogo"> SONMYD </span>
       </a>
       <a href="javascript:void(0);" class="icon" onclick="watchLinks()">
@@ -95,7 +99,7 @@
           alt="Descubre la maravilla del espacio en este GIF animado, donde dos intrépidos astronautas flotan con gracia mientras orbitan alrededor de un planeta vivo y vibrante. Este cautivador contenido visual te sumergirá en una experiencia cósmica única. ¡Explora la exploración espacial, la ingravidez y la belleza de los astros en este impresionante GIF animado de astronautas y planetas en órbita!"
           title="Astronauts" /> -->
       <video id="astronauts" width="700" height="700" autoplay loop muted>
-        <source src="assets/astronaut.webm" type="video/webm">
+        <source src="assets/astronauts.mp4" type="video/mp4">
         Tu navegador no soporta la etiqueta de video.
       </video>
     </div>
@@ -103,12 +107,14 @@
   </header>
   <main>
     <section class="sections" id="aboutMe">
-      <video id="rocket"  autoplay loop muted>
+      <video id="rocket" autoplay loop muted>
         <source src="assets/rocket.webm" type="video/webm">
         Tu navegador no soporta la etiqueta de video.
       </video>
       <article id="containerAboutMe">
-        <img loading="lazy"  src="assets/santiago_bedoya.png" alt="" width="200px" />
+
+
+        <img loading="lazy" src="assets/santiago_bedoya.png" alt="" width="200px" />
         <h2>Hola, soy Santiago. <br id="spaceAbout"> Un gusto conocerte.</h2>
         <p id="textAboutMe">
           Desde que comencé mi viaje como programador full stack, he trabajado
@@ -132,7 +138,7 @@
       <h2 class="subTitle">Habilidades</h2>
       <article id="containerSkills">
         <div class="containersSkills">
-          <img loading="lazy"  id="comet1" class="cometsLeft comets" src="assets/giphy.gif" alt="">
+          <img loading="lazy" id="comet1" class="cometsLeft comets" src="assets/giphy.gif" alt="">
           <h3>Frontend Developer</h3>
           <hr id="dividerOne" class="dividerSkills" />
           <section class="carousel">
@@ -140,50 +146,50 @@
               <div class="w-carousel">
                 <ul class="list">
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/html.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/html.png" alt="" />
                   </li>
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/css.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/css.png" alt="" />
                   </li>
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/javascript.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/javascript.png" alt="" />
                   </li>
                 </ul>
               </div>
               <div class="w-carousel">
                 <ul class="list">
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/react.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/react.png" alt="" />
                   </li>
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/native.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/native.png" alt="" />
                   </li>
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/redux.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/redux.png" alt="" />
                   </li>
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/tailwind.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/tailwind.png" alt="" />
                   </li>
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/wordpress.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/wordpress.png" alt="" />
                   </li>
                 </ul>
               </div>
             </article>
           </section>
           <div class="containerImagesSkills">
-            <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/html.png" alt="" />
-            <img loading="lazy"  class="imgSkills SA2 CA1" src="assets/css.png" alt="" />
-            <img loading="lazy"  class="imgSkills SA3 CA1" src="assets/javascript.png" alt="" />
-            <img loading="lazy"  class="imgSkills SA4 CA1" src="assets/react.png" alt="" />
-            <img loading="lazy"  class="imgSkills SA5 CA1" src="assets/native.png" alt="" />
-            <img loading="lazy"  class="imgSkills SA6 CA1" src="assets/redux.png" alt="" />
-            <img loading="lazy"  class="imgSkills SA7 CA1" src="assets/tailwind.png" alt="" />
-            <img loading="lazy"  class="imgSkills SA8 CA1" src="assets/wordpress.png" alt="" />
+            <img loading="lazy" class="imgSkills SA1 CA1" src="assets/html.png" alt="" />
+            <img loading="lazy" class="imgSkills SA2 CA1" src="assets/css.png" alt="" />
+            <img loading="lazy" class="imgSkills SA3 CA1" src="assets/javascript.png" alt="" />
+            <img loading="lazy" class="imgSkills SA4 CA1" src="assets/react.png" alt="" />
+            <img loading="lazy" class="imgSkills SA5 CA1" src="assets/native.png" alt="" />
+            <img loading="lazy" class="imgSkills SA6 CA1" src="assets/redux.png" alt="" />
+            <img loading="lazy" class="imgSkills SA7 CA1" src="assets/tailwind.png" alt="" />
+            <img loading="lazy" class="imgSkills SA8 CA1" src="assets/wordpress.png" alt="" />
           </div>
         </div>
         <div class="containersSkills">
-          <img loading="lazy"  id="comet2" class="cometsRight comets" src="assets/giphy.gif" alt="">
+          <img loading="lazy" id="comet2" class="cometsRight comets" src="assets/giphy.gif" alt="">
           <h3>Backend Developer</h3>
           <hr id="dividerTwo" class="dividerSkills" />
           <section class="carousel">
@@ -191,20 +197,20 @@
               <div class="w-carousel">
                 <ul class="list">
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/node.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/node.png" alt="" />
                   </li>
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/rails.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/rails.png" alt="" />
                   </li>
                 </ul>
               </div>
               <div class="w-carousel">
                 <ul class="list">
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/mongo.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/mongo.png" alt="" />
                   </li>
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/postgresql.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/postgresql.png" alt="" />
                   </li>
                 </ul>
               </div>
@@ -212,14 +218,14 @@
           </section>
           <div class="containerImagesSkills">
 
-            <img loading="lazy"  class="imgSkills SA3 CA2" src="assets/node.png" alt="" />
-            <img loading="lazy"  class="imgSkills SA4 CA2" src="assets/rails.png" alt="" />
-            <img loading="lazy"  class="imgSkills SA5 CA2" src="assets/mongo.png" alt="" />
-            <img loading="lazy"  class="imgSkills SA6 CA2" src="assets/postgresql.png" alt="" />
+            <img loading="lazy" class="imgSkills SA3 CA2" src="assets/node.png" alt="" />
+            <img loading="lazy" class="imgSkills SA4 CA2" src="assets/rails.png" alt="" />
+            <img loading="lazy" class="imgSkills SA5 CA2" src="assets/mongo.png" alt="" />
+            <img loading="lazy" class="imgSkills SA6 CA2" src="assets/postgresql.png" alt="" />
           </div>
         </div>
         <div class="containersSkills">
-          <img loading="lazy"  id="comet3" class="cometsLeft comets" src="assets/giphy.gif" alt="">
+          <img loading="lazy" id="comet3" class="cometsLeft comets" src="assets/giphy.gif" alt="">
           <h3>Mentor</h3>
           <hr id="dividerThree" class="dividerSkills" />
           <section class="carousel">
@@ -227,38 +233,38 @@
               <div class="w-carousel">
                 <ul class="list">
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/github.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/github.png" alt="" />
                   </li>
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/git.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/git.png" alt="" />
                   </li>
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/figma.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/figma.png" alt="" />
                   </li>
                 </ul>
               </div>
               <div class="w-carousel">
                 <ul class="list">
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/scrum.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/scrum.png" alt="" />
                   </li>
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/canva.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/canva.png" alt="" />
                   </li>
                   <li class="imgdot">
-                    <img loading="lazy"  class="imgSkills SA1 CA1" src="assets/chatgpt.png" alt="" />
+                    <img loading="lazy" class="imgSkills SA1 CA1" src="assets/chatgpt.png" alt="" />
                   </li>
                 </ul>
               </div>
             </article>
           </section>
           <div class="containerImagesSkills">
-            <img loading="lazy"  class="imgSkills SA7 CA3 " src="assets/github.png" alt="" />
-            <img loading="lazy"  class="imgSkills SA6 CA3 " src="assets/git.png" alt="" />
-            <img loading="lazy"  class="imgSkills SA5 CA3 " src="assets/figma.png" alt="" />
-            <img loading="lazy"  class="imgSkills SA4 CA3 " src="assets/scrum.png" alt="" />
-            <img loading="lazy"  class="imgSkills SA3 CA3 " src="assets/canva.png" alt="" />
-            <img loading="lazy"  class="imgSkills SA2 CA3 " src="assets/chatgpt.png" alt="" />
+            <img loading="lazy" class="imgSkills SA7 CA3 " src="assets/github.png" alt="" />
+            <img loading="lazy" class="imgSkills SA6 CA3 " src="assets/git.png" alt="" />
+            <img loading="lazy" class="imgSkills SA5 CA3 " src="assets/figma.png" alt="" />
+            <img loading="lazy" class="imgSkills SA4 CA3 " src="assets/scrum.png" alt="" />
+            <img loading="lazy" class="imgSkills SA3 CA3 " src="assets/canva.png" alt="" />
+            <img loading="lazy" class="imgSkills SA2 CA3 " src="assets/chatgpt.png" alt="" />
           </div>
         </div>
       </article>
@@ -270,7 +276,7 @@
       <div class="slideshow-container">
         <div class="sliderContainer">
           <div class="mySlides fade ">
-            <img loading="lazy"  class="modalImg" src="assets/puntacana.png"
+            <img loading="lazy" class="modalImg" src="assets/puntacana.png"
               title="Punta Cana Transfer - Captura de Pantalla del Diseño"
               alt="Captura de pantalla que muestra el diseño interactivo de la plataforma Punta Cana Transfer, desarrollada con React y Ruby on Rails."
               id="puntacana">
@@ -288,7 +294,7 @@
           </div>
 
           <div class="mySlides fade ">
-            <img loading="lazy"  class="modalImg" src="assets/insurance.png"
+            <img loading="lazy" class="modalImg" src="assets/insurance.png"
               title="Sitio de Seguros (No code y personalización con CSS y JavaScript vanilla):"
               alt="Vista previa de la página de seguros con personalización mediante CSS y JavaScript vanilla, creado utilizando una solución no code."
               id="insurance">
@@ -306,7 +312,7 @@
           </div>
 
           <div class="mySlides fade ">
-            <img loading="lazy"  class="modalImg" src="assets/movies.png" id="movies">
+            <img loading="lazy" class="modalImg" src="assets/movies.png" id="movies">
             <div class="textContainer">
               <h3 id="moviesTitle">Proyecto React con autenticación <br> y API de películas:
               </h3>
@@ -319,7 +325,7 @@
           </div>
 
           <div class="mySlides fade ">
-            <img loading="lazy"  class="modalImg" src="assets/odontology.png" id="odontology">
+            <img loading="lazy" class="modalImg" src="assets/odontology.png" id="odontology">
             <div class="textContainer">
               <h3 id="odontologyTitle">Página web de Odontología con animaciones de scroll
                 <br> (JavaScript vanilla):
@@ -334,7 +340,7 @@
           </div>
 
           <div class="mySlides fade ">
-            <img loading="lazy"  class="modalImg" src="assets/odontology.png" id="portfolio">
+            <img loading="lazy" class="modalImg" src="assets/odontology.png" id="portfolio">
             <div class="textContainer">
               <h3 id="portfolioTitle">Sitio Web "Sonmyd"
                 <br> (HTML, CSS y JavaScript vanilla):
@@ -365,7 +371,7 @@
       <aside id="myModal" class="modal">
         <span class="close">&times;</span>
         <h2 id="modalTitle" class="pt-50">modalTitle</h2>
-        <img loading="lazy"  class="modal-content" id="img01" />
+        <img loading="lazy" class="modal-content" id="img01" />
         <p id="modalParagraph"></p>
       </aside>
     </section>
@@ -424,7 +430,7 @@
         <div class="copyright">&copy;SONMYD TODOS LOS DERECHOS RESERVADOS</div>
       </div>
     </div>
-    <img loading="lazy"  id="imgCode" src="assets/CODE.png" alt="">
+    <img loading="lazy" id="imgCode" src="assets/CODE.png" alt="">
 
     <video id="satellite" autoplay loop muted>
       <source src="assets/satellite.mp4" type="video/mp4">
