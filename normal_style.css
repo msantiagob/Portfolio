@@ -15,10 +15,10 @@ body {
      color:white;
 
 } */
-#questions{
-margin: 40px 0;
+#questions {
+  margin: 40px 0;
 }
-h5{
+h5 {
   font-size: 18px;
 }
 .container {
@@ -41,14 +41,14 @@ button.accordion {
 }
 
 button.accordion:after {
-  content: "\f150";
-  font-family: "fontawesome";
+  content: '\f150';
+  font-family: 'fontawesome';
   font-size: 18px;
   float: right;
 }
 
 button.accordion.is-open:after {
-  content: "\f151";
+  content: '\f151';
 }
 
 button.accordion:hover,
@@ -1519,7 +1519,7 @@ input:-webkit-autofill:hover {
   #textContainerHero {
     width: 80vw;
   }
-  #imageContainerHero{
+  #imageContainerHero {
     width: 55vw;
   }
   #containerAboutMe {
@@ -1540,7 +1540,6 @@ input:-webkit-autofill:hover {
 }
 @media screen and (max-width: 1024px) {
   .accordion-content {
-
     margin: 20px 0;
   }
   .fade,
